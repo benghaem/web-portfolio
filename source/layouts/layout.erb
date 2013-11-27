@@ -16,46 +16,43 @@
 	
 	<%= stylesheet_link_tag "normalize", "main", "prism" %>
 	<%= javascript_include_tag  "jqueryLocal.min", "prism", "script" %>
-  </head>
-  <script>
-  WebFont.load({
-    google: {
-      families: ['Oxygen']
-    }
-  });
+  	</head>
+  	<script>
+		WebFont.load({
+		    google: {
+		    	families: ['Oxygen']
+	    		}
+		});
 	</script>
-  <body class="<%= page_classes %>">
-  <div class="modalBlackout"><span>close</span></div>
-  <div class="modalHelper"></div>
-  <div class="effectContain">
-  <div class="naviToggle <%= current_page.data.colorClass%>">
-	<div class="naviMiddle">
-	<a href="http://www.benghaem.com">ben ghaem</a>
-	  <ul>
-		<li data-color="1"><a href="/">home</a></li> |
-		<li data-color="3"><a href="/projects/">projects</a></li> |
-		<li data-color="5"><a href="/testbed/">test bed</a></li > |
-		<li data-color="4"><a href="/blog/">blog</a></li>
-	  </ul>
-	</div>
-	</div>
-	<%= yield %>
-
-
-  <div class="footer">
-	<img src="/imgs/dropd.png" class="footerToggle">
-	<div class="footerButtonHold">
-	  <div class="footerButton contactOpen">contact</div>
-	  <a href="/cv/"><div class="footerButton">curriculum vitae</div></a>
-	</div>
-	  <ul>
-		<li data-color="1"><a href="/"> home</a></li> |
-		<li data-color="3"><a href="/projects/"> projects</a></li> |
-		<li data-color="5"><a href="/testbed/"> test bed</a></li > |
-		<li data-color="4"><a href="/blog/"> blog</a></li>
-	  </ul>
-
-	</div>
-	</div>
-  </body>
+	<body class="<%= page_classes %>">
+		<div class="modalBlackout"><span>close</span></div>
+		<div class="modalHelper"></div>
+		<div class="effectContain">
+			<div class="naviToggle <%= current_page.data.colorClass%>">
+				<div class="naviMiddle">
+					<a href="http://www.benghaem.com">ben ghaem</a>
+					<ul>
+						<li data-color="1"><a href="/">home</a></li> |
+						<li data-color="3"><a href="/projects/">projects</a></li> |
+						<li data-color="5"><a href="/testbed/">test bed</a></li > |
+						<li data-color="4"><a href="/blog/">blog</a></li>
+					</ul>
+				</div>
+			</div>
+				<%= yield %>
+			<div class="footer">
+				<img src="/imgs/dropd.png" class="footerToggle">
+				<div class="footerButtonHold">
+					<div class="footerButton contactOpen">contact</div>
+					<a href="/cv/"><div class="footerButton">curriculum vitae</div></a>
+				</div>
+				<ul>
+					<li data-color="1"><a href="/"> home</a></li> |
+					<li data-color="3"><a href="/projects/"> projects</a></li> |
+					<li data-color="5"><a href="/testbed/"> test bed</a></li > |
+					<li data-color="4"><a href="/blog/"> blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
 </html>

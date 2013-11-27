@@ -1,15 +1,15 @@
 <% wrap_layout :layout do %>
-  <div class="mainContain">
-  	<div class="projectText">
-  	<h2><%=current_page.data.fullTitle%></h2>
-    <%= yield %>
-	</div>
-    <div class="projectInfo">
-    	<h3>Date: <%=current_page.data.date%></h3>
-    	<h3>Type: <%=current_page.data.type%></h3>
-    	<% if current_page.data.liveProject != false %>
-    	<a href="raw/"><div class="projectPageButton">Live Project</div></a>
-    	<% end %>
-    </div>
-  </div>
+	<div class="mainContain">
+			<div class="projectText">
+				<h2><%=current_page.data.fullTitle%></h2>
+				<%= yield %>
+			</div>
+		<div class="projectInfo">
+			<h3>Date: <%=current_page.data.date%></h3>
+			<h3>Type: <%=current_page.data.type%></h3>
+			<% if current_page.data.liveProject != false %>
+			<a href="raw/"><div class="projectPageButton">Live Project</div></a>
+			<% end %>
+		</div>
+  	</div>
 <% end %>

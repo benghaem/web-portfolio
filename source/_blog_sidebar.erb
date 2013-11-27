@@ -2,7 +2,6 @@
 <div class="blogSidebar">
 	<h2>Ben Ghaem:</h2>
 	<p>I like to write about things ranging from personal experiences to the newest tech</p>
-
 	<div class="blogArchive">
 		<h2 class="bottomSmallMargin">Archive:</h2>
 		<noscript>The calendar area is compacted via javascript, apolliges for a possibly long page</noscript>
@@ -14,29 +13,27 @@
 				<%end%>
 			</div>
 			<%listYears.each do |year|%>
-					<div class="blogArchivePanel <%=year%>CalHidden blogArchivePanelHidden">
-
-						<ul>
-							<%listMonths(year).each do |month|%>
-								<li><h3><a href="<%= blog_month_path(year,month[0])%>"><%=month[0]%></h3></a></li>
-							<%end%>
-
-					 	</ul>
-					 	<div class="blogArchiveReturn">Back</div>
-					 </div>	
-				<%end%>
-			</div>
-		</div>
-
-
-	<div class="blogTagList">
-	<h2 class="topSmallMargin">Tags:</h2>
+				<div class="blogArchivePanel <%=year%>CalHidden blogArchivePanelHidden">
 					<ul>
-						<%listTags.each do |tag|%>
+						<%listMonths(year).each do |month|%>
 							<li>
-								<a href="<%= tag_path(tag[1]) %>"><%= tag[1] + " (" + tag[0].to_s %>)</a>
+								<h3><a href="<%= blog_month_path(year,month[0])%>"><%=month[0]%></h3></a>
 							</li>
-					<% end %>
-				</ul>
+						<%end%>
+				 	</ul>
+				 	<div class="blogArchiveReturn">Back</div>
+				</div>
+			<%end%>
+		</div>
+	</div>
+	<div class="blogTagList">
+		<h2 class="topSmallMargin">Tags:</h2>
+		<ul>
+			<%listTags.each do |tag|%>
+				<li>
+					<a href="<%= tag_path(tag[1]) %>"><%= tag[1] + " (" + tag[0].to_s %>)</a>
+					</li>
+			<% end %>
+		</ul>
 	</div>
 </div>
