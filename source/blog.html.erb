@@ -1,0 +1,57 @@
+---
+title: Blog
+colorClass: CCmutedGreen
+pageable: true
+per_page: 8
+---
+<div class="mainContain">
+  <%= partial "blog_sidebar" %>
+	<div class="blogMain">
+		<h2>Recent Posts:</h2>
+		<% page_articles.each do |article| %>
+			<article>
+				<div class="blogArticle">
+					<div class="blogArticleInfo">
+					 	<h2>
+							<a href="<%= article.url %>"><%= article.title %></a>
+						</h2>
+							<h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>
+					</div>
+					<div class="blogPreview">
+						<p><%= lorem.paragraph %></P>
+						<%= article.summary %>
+					</div>
+					<div class="blogArticleFooter">
+						<h3>
+						<% article.tags.each do |tagname| %>
+					 		<a href="<%= tag_path(tagname) %>"><%= tagname %></a>
+					 	<% end %>
+						</h3>
+					</div>
+				</div>
+			</article>
+		<% end %>
+		<div class="blogPageSelect">
+			<div class="blogPre">
+				<% if paginate %>
+					<% if prev_page %>
+						<%= link_to 'Previous page', prev_page %>
+					<% end %>
+				<%end %>
+			</div>
+			<div class="blogCurrent">
+				<% if paginate && num_pages > 1 %>
+					<span><%= page_number %> / <%= num_pages %></span>
+				<% end %>
+			</div>
+			<div class="blogNext">
+				<% if paginate %>
+					<% if next_page %>
+					<%= link_to 'Next page', next_page %>
+					<% end %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
+

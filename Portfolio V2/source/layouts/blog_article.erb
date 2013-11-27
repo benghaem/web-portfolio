@@ -1,0 +1,33 @@
+<% wrap_layout :layout do %>
+  <div class="mainContain">
+  <%= partial "blog_sidebar" %>
+  <div class="blogMain">
+  <div class="blogArticle">
+  <article>
+  	<div class="blogArticleTitle">
+    <h2><%= current_article.title %></h2><time><%= current_article.date.strftime('%b %e, %Y') %></time>
+    </div>
+
+    <div class="blogArticleText">
+
+    <%= yield %>
+    <p><%= lorem.paragraphs 15 %></P>
+    </div>
+    <% if current_article.tags %>
+          <h3>   Tags:
+            <% current_article.tags.each do |tagname| %>
+              <a href="<%= tag_path(tagname) %>"><%= tagname %></a>
+            <% end %>
+        </h3>
+      <% end %>
+  </article>
+
+
+</div>
+
+ <div class="blogComments">
+</div>
+</div>
+
+</div>
+<% end %>
