@@ -421,8 +421,8 @@ pre{
 }
 .showcaseActive{
 	width: 20%;
-	height: 5px;
-	background: #000;
+	height: 2px;
+	background: #aaa;
 	position: relative;
 }
 
@@ -1429,13 +1429,38 @@ pre{
 }
 
 @media (max-width : 360px){
-		.projectShowcase{
-		width: 320px;
+	.projectShowcase{
+		width: 250px;
+		margin-top: 0px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		padding: 0 0 0 0;
 	}
 	.showcaseItem{
-		margin: 0 72px 0 72px;
+		margin: 0 0 10px 0;
+		position: relative;
+		float: left;
+		height: 75px;
+		text-align: left;
+		width: 250px;
+		}
+
+	.showcaseItem img{
+		width: 70px;
+		float: left;
 		position: relative;
 	}
+
+	.showcaseProjectText{
+		display: block;
+		text-align: left;
+		position: relative;
+		width: 180px;
+		margin-left: 80px;
+		padding-top: 2px;
+	}
+
 	.glamorShot{
 		background-position: -300px;
 	}
