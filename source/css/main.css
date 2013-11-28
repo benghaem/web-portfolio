@@ -1347,6 +1347,7 @@ pre{
 
 	.glamorShot{
 		background-position: -450px;
+		background-position-top: -50px;
 		height: 325px;
 		background: url(/imgs/benfull_640.jpg);
 	}
@@ -1388,11 +1389,11 @@ pre{
 
 @media (max-width : 360px){
 	.glamorShot{
-		background-position: -550px;
+		background-position: -300px;
 	}
 
 	.glamorText{
-		top:295px;
+		top:130px;
 	}
 	.naviToggle{
 		height:70px; 
