@@ -246,14 +246,14 @@ pre{
 	margin: auto;
 	height: 175px;
 	position: relative;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	padding-top: 25px;
 }
 
 .showcaseImageCenter{
 	margin: auto;
 	position: relative;
-	width: 1080px;
+	width: 100%;
 	height: 100px;
 }
 
@@ -395,6 +395,20 @@ pre{
 
 .showcasePageButton:hover{
 	background: #FFB14B;
+}
+
+.showcaseActiveContain{
+		width: 100%;
+		float: left;
+		clear: both;
+		margin: 10px 0 0 0;
+
+}
+.showcaseActive{
+	width: 20%;
+	height: 5px;
+	background: #000;
+	position: relative;
 }
 
 .headShot{
@@ -1327,16 +1341,21 @@ pre{
 		overflow-x: scroll;		
 	}
 
+	.showcaseActiveContain{
+		display: none;
+	}
+
 	.glamorShot{
 		background-position: -450px;
-		height: 500px;
+		height: 325px;
+		background: url(/imgs/benfull_640.jpg);
 	}
 
 	.glamorText{
 		position: relative;
 		width: 100%;
 		left: 0px;
-		top: 320px;
+		top: 150px;
 		padding: 30px 0px 30px 0px;
 
 	}

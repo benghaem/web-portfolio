@@ -209,10 +209,12 @@ function showcaseSlideTo(location){
 	if (location < 1){ 
 		location = 1
 	}
-	location = location * $('.showcasePage').width() * -1 +$('.showcasePage').width()//width of the page element
+	slideLocation = location * $('.showcasePage').width() * -1 +$('.showcasePage').width()//width of the page element
 	$('.showcasePageHold').animate({
-		left: location
+		left: slideLocation
 	})
+	$('.showcaseActive').animate({
+		left: (location-1) * $('.showcaseImageCenter').width()/5});
 	$('.cssWindowOutside').fadeTo(400,1)
 }
 
