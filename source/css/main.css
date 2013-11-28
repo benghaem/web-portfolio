@@ -1351,7 +1351,7 @@ pre{
 		width: 768px;
 	}
 	.showcaseItem{
-		margin: 0 40.5px 0 40.5px;
+		margin: 20px 40.5px 0 40.5px;
 		position: relative;
 	}
 
@@ -1362,7 +1362,7 @@ pre{
 		width: 640px;
 	}
 	.showcaseItem{
-		margin: 0 19px 0 19px;
+		margin: 20px 19px 0 19px;
 		position: relative;
 	}
 }
@@ -1419,18 +1419,7 @@ pre{
 		height: 350px;
 	}
 	.projectShowcase{
-		width: 480px;
-	}
-	.showcaseItem{
-		margin: 0 32.5px 0 32.5px;
-		position: relative;
-	}
-
-}
-
-@media (max-width : 360px){
-	.projectShowcase{
-		width: 250px;
+		width: 360px;
 		margin-top: 0px;
 		margin-left: auto;
 		margin-right: auto;
@@ -1441,8 +1430,34 @@ pre{
 		margin: 0 0 10px 0;
 		position: relative;
 		float: left;
-		height: 75px;
+		height: 95px;
 		text-align: left;
+		width: 360px;
+		}
+
+	.showcaseItem img{
+		width: 90px;
+		float: left;
+		position: relative;
+	}
+
+	.showcaseProjectText{
+		display: block;
+		text-align: left;
+		position: relative;
+		width: 270px;
+		margin-left: 110px;
+		padding-top: 2px;
+	}
+}
+
+@media (max-width : 360px){
+	.projectShowcase{
+		width: 250px;
+	}
+	.showcaseItem{
+		margin: 0 0 10px 0;
+		height: 75px;
 		width: 250px;
 		}
 
@@ -1453,9 +1468,6 @@ pre{
 	}
 
 	.showcaseProjectText{
-		display: block;
-		text-align: left;
-		position: relative;
 		width: 180px;
 		margin-left: 80px;
 		padding-top: 2px;
