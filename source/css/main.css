@@ -248,6 +248,19 @@ pre{
 	position: relative;
 	padding-bottom: 20px;
 	padding-top: 25px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.projectShowcase{
+	width: 1080px;
+	margin: auto;
+	height: 175px;
+	position: relative;
+	padding-bottom: 20px;
+	padding-top: 25px;
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .showcaseImageCenter{
@@ -261,10 +274,12 @@ pre{
 	height: auto;
 	width: 175px;
 	float: left;
- 	margin:0 15.75px 0 15.75px;
+ 	margin:0 19.75px 0 19.75px;
 	text-align: center;
 	cursor: pointer;
 	color: #4d4d4d;
+	display: block;
+	margin-bottom: 20px;
 }
 
 .showcaseItem img{
@@ -1332,7 +1347,26 @@ pre{
 	.showcasePageText p{
 		display: none;
 	}
+	.projectShowcase{
+		width: 768px;
+	}
+	.showcaseItem{
+		margin: 0 40.5px 0 40.5px;
+		position: relative;
+	}
+
 }
+
+@media (max-width: 768px){
+		.projectShowcase{
+		width: 640px;
+	}
+	.showcaseItem{
+		margin: 0 19px 0 19px;
+		position: relative;
+	}
+}
+
 @media (max-width : 640px){
 	
 	.showcase{
@@ -1384,10 +1418,24 @@ pre{
 	.footerLong{
 		height: 350px;
 	}
+	.projectShowcase{
+		width: 480px;
+	}
+	.showcaseItem{
+		margin: 0 32.5px 0 32.5px;
+		position: relative;
+	}
 
 }
 
 @media (max-width : 360px){
+		.projectShowcase{
+		width: 320px;
+	}
+	.showcaseItem{
+		margin: 0 72px 0 72px;
+		position: relative;
+	}
 	.glamorShot{
 		background-position: -300px;
 	}
