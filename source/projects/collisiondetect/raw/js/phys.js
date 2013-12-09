@@ -16,7 +16,7 @@ var chunkh = 75;
 function draw(arrayname){
     var ctxc = physCan.getContext('2d');
 	for (var i = 0;i < items.length;i++){
-		ctxc.fillStyle = 'rgb(200,'+(i/10*50)+',25)'
+		ctxc.fillStyle = 'rgb(120,'+(i/100*50)+',210)'
 		ctxc.fillRect(items[i][0], items[i][1], boxw, boxh)
 	}
 }
