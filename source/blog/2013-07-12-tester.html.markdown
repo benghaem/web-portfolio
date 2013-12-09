@@ -1,7 +1,7 @@
 ---
 title: Test Post Please Ignore
 date: 2013-07-12 18:50 UTC
-tags:
+tags: Normal
 colorClass: CCmutedGreen
 author: Ben Ghaem
 ---
