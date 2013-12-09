@@ -26,8 +26,6 @@ naviToggleCacheVal = $('.naviToggle');
 	//extend blogsidebar to page height
 	$('.blogSidebarReserve').css('height',$('.mainContain').height());
 
-	//compact the footer
-	//$('.footer').css("height", "70px")
 
 	//enable navigation
 	// $('.naviToggle').click(
@@ -88,14 +86,6 @@ naviToggleCacheVal = $('.naviToggle');
   			$('.blogArchivePanelHidden').hide()
   		});
   	});
-  	//toggle the footer height
-  	$('.footerToggle').click(function(){
-  		$(this).toggleClass('rotate180Instant')
-  		$('.footer').removeAttr("style")
-  		$('.footer').toggleClass('footerLong')
-  		$("html, body").animate({ scrollTop: $(document).height() }, 0);
-  		return false;
-  	})
 
   	//activate the contact modal
   	$('.contactOpen').click(function(){
@@ -126,7 +116,7 @@ $(window).resize(function () {
 })
 
 $(window).scroll(function() {
-	if (getBottomDist(window) <= 220) {
+	if (getBottomDist(window) <= 209 /*Footer total height inc. margin*/) {
 		$('.blogSidebar').addClass('blogSidebarAbsolute');
 		console.log("woah")
 	}
@@ -238,9 +228,9 @@ function getPageColor(){
 	};
 }
 
-function getBottomDist(element){
-	var offset = window.pageYOffset
-	var bottomDist = $(document).height() - offset - $(window).height()
+function getBottomDist(){
+	var offset = $('.blogSidebarTracker').offset()
+	var bottomDist = $(document).height() - offset.top - $('.blogSidebar').height()
 	console.log(bottomDist)	
 	return bottomDist
 	};

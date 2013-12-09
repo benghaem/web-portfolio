@@ -462,6 +462,10 @@ pre{
 	bottom: 0px;
 }
 
+.blogSidebarTracker{
+	position: fixed;
+}
+
 .blogSidebar a{
 	display: inline-block;
 	color: #4D4D4D;
@@ -834,9 +838,9 @@ pre{
 
 /*Footer*/
 .footer{
-	height: 70px;
+	height: 150px;
 	background: #4d4d4d;
-	padding-top: 20px;
+	padding-top: 30px;
 	text-align: center;
 	overflow: hidden;
 	clear: both;
@@ -845,9 +849,6 @@ pre{
 	z-index: 100;
 	bottom: 0px;
 	position: relative;
-}
-.footerLong{
-	height: 210px;
 }
 .footer img{
 	cursor: pointer;
