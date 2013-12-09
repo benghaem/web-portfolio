@@ -615,11 +615,11 @@ pre{
 	padding-top: 16px;
 	height: 150px;
 	position: relative;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: #61C758 solid 2px;
 }
 
-.blogArticleInfo img{
-	border-bottom: 5px solid #61C758;
-}
 
 .blogArticleInfoOverlay{
 	position: absolute;
@@ -1405,7 +1405,7 @@ pre{
 }
 
 @media (max-width : 640px){
-	
+
 	.showcase{
 		width: 100%;
 		overflow: hidden;
