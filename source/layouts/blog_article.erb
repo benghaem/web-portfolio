@@ -12,7 +12,11 @@
 						<p><%= lorem.paragraphs 15 %></P>
 					</div>
 					<% if current_article.tags %>
-						<h3>Tags:
+						<h3>
+							<div class="tagIconFull">
+								<div class="tagIconSubSquare"></div>
+								<div class="tagIconSubTriangle"></div>
+							</div>
 							<% current_article.tags.each do |tagname| %>
 								<a href="<%= tag_path(tagname) %>"><%= tagname %></a>
 				            <% end %>
