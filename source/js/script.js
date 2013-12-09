@@ -15,7 +15,7 @@ naviContainCacheVal = $('.naviContain');
 naviToggleCacheVal = $('.naviToggle');
 
 	//force footer to bottom
-	mainContainCacheVal.css("min-height", ($(window).height()-155));
+	mainContainCacheVal.css("min-height", ($(window).height()-245/*footer height*/));
 
 	//place static items
 	naviContainCacheVal.css("left", Math.round(($(window).width()-naviContainCacheVal.outerWidth())/2));
@@ -111,18 +111,16 @@ $(window).resize(function () {
 	}
 	naviContainCacheVal.css("left", Math.round(($(window).width()-naviContainCacheVal.outerWidth()))/2);
 	// naviToggleCacheVal.css("left", Math.round(($(window).width()-naviToggleCacheVal.width())/2));
-	mainContainCacheVal.css("min-height", ($(window).height()-155));
+	mainContainCacheVal.css("min-height", ($(window).height()-245));
 	showcaseSlideTo(1)
 })
 
 $(window).scroll(function() {
 	if (getBottomDist(window) <= 209 /*Footer total height inc. margin*/) {
 		$('.blogSidebar').addClass('blogSidebarAbsolute');
-		console.log("woah")
 	}
 	else {
 		$('.blogSidebar').removeClass('blogSidebarAbsolute');
-		console.log("safe")
 	};
 });
 
@@ -231,6 +229,5 @@ function getPageColor(){
 function getBottomDist(){
 	var offset = $('.blogSidebarTracker').offset()
 	var bottomDist = $(document).height() - offset.top - $('.blogSidebar').height()
-	console.log(bottomDist)	
 	return bottomDist
 	};

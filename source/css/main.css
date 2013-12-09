@@ -659,8 +659,8 @@ pre{
 
 .blogArticleText{
 	margin-top: 5px;
-	font-size: 1em;
-	line-height: 1.3em;
+	font-size: 1.15em;
+	line-height: 1.5em;
 }
 
 .blogPreview{
@@ -693,6 +693,7 @@ pre{
 	line-height: 50px;
 	text-align: center;
 	color: #4d4d4d;
+	height: 50px;
 }
 
 .blogPageSelect a{
@@ -702,6 +703,7 @@ pre{
 	height: 50px;
 	background: #4D4D4D;
 	text-align: center;
+	padding: 0 0 0 0;
 }
 
 .blogPageSelect a:hover{
@@ -1448,6 +1450,7 @@ pre{
 	}
 
 	.footer{
+		height: auto;
 		width: 100%;
 	}
 

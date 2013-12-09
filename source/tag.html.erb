@@ -11,10 +11,13 @@ colorClass: CCmutedGreen
 	   <article>
 				<div class="blogArticle">
 					<div class="blogArticleInfo">
-					 	<h2>
-							<a href="<%= article.url %>"><%= article.title %></a>
-						</h2>
-							<h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>
+						<div class="blogArticleInfoOverlay">
+						 	<h2>
+								<a href="<%= article.url %>"><%= article.title %></a>
+							</h2>
+								<h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>
+						</div>
+						<img src="<%= article.data.headerImg || '../../img/600x150.gif' %>"></img>
 					</div>
 					<div class="blogPreview">
 						<p><%= lorem.paragraph %></P>
@@ -35,7 +38,7 @@ colorClass: CCmutedGreen
 		<div class="blogPre">
 			<% if paginate %>
 				<% if prev_page %>
-					<%= link_to 'Previous page', prev_page %>
+					<%= link_to 'Previous', prev_page %>
 				<% end %>
 			<%end %>
 		</div>
@@ -47,7 +50,7 @@ colorClass: CCmutedGreen
 		<div class="blogNext">
 			<% if paginate %>
 				<% if next_page %>
-				<%= link_to 'Next page', next_page %>
+				<%= link_to 'Next', next_page %>
 				<% end %>
 			<% end %>
 		</div>
