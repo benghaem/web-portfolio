@@ -667,14 +667,23 @@ pre{
 .blogPreview{
 	margin-top: 15px;
 	font-size: 1.1em;
-	line-height: 1.2em
+	line-height: 1.2em;
+	margin-bottom: 10px;
 }
 
 
 .blogArticleTags{
 	text-align: left;
-	margin-top: 5px;
+	margin: 5px 0 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	height: auto;
+	position: relative;
+	display: block;
+	/*border-bottom:dashed rgba(0,0,0,.5) 2px;*/
+	border-top:dashed rgba(0,0,0,.5) 2px;
 }
+
 
 /*.blogArticleTags a{
 	display: inline-block;
