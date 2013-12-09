@@ -36,18 +36,24 @@ colorClass: CCmutedGreen
               </h2>
                 <h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>
             </div>
-            <img src="<%= article.data.headerImg || '../../img/600x150.gif' %>"></img>
+            <img src="<%= article.data.headerImg || 'img/600x150.gif' %>"></img>
           </div>
-          <div class="blogPreview">
-            <p><%= lorem.paragraph %></P>
-            <%= article.summary %>
-          </div>
-          <div class="blogArticleFooter">
+          <div class="blogArticleTags">
             <h3>
+            <div class="tagIconFull">
+              <div class="tagIconSubSquare"></div>
+              <div class="tagIconSubTriangle"></div>
+            </div>
             <% article.tags.each do |tagname| %>
               <a href="<%= tag_path(tagname) %>"><%= tagname %></a>
             <% end %>
             </h3>
+          </div>
+          <div class="blogPreview">
+            <p><%= lorem.paragraph %>
+            <%= article.summary %>
+            </p>
+            <a href="<%= article.url %>">...Continue Reading</a>
           </div>
         </div>
       </article>

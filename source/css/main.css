@@ -598,7 +598,7 @@ pre{
 .blogMain a{
 	display: inline-block;
 	color: #4D4D4D;
-	text-align: right;
+	text-align: left;
 	background: #61C758;
 	padding: 5px;
 	color: #fff;
@@ -636,55 +636,54 @@ pre{
 	bottom: 5px;
 	z-index: 10;
 	width: 100%;
-	height: 45px;
 }
 
 .blogArticleInfoOverlay h2{
 	float: left;
+	font-size: 1.5em;
 }
 
 .blogArticleInfoOverlay h3{
 	float: right;
-	text-align: right;
 	display: block;
+	text-align: right;
+	font-size: 1.1em;
 }
 
 .blogArticleTitle{
 	padding-top: 0;
 	padding-bottom: 5px;
 	border-bottom: 5px solid #61C758;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	text-align: left;
 }
 
 .blogArticleText{
 	margin-top: 5px;
-	font-size: 1.15em;
-	line-height: 1.5em;
+	font-size: 1.1em;
+	line-height: 1.3em;
 }
 
 .blogPreview{
 	margin-top: 15px;
-	font-size: 1.05em;
-	line-height: 1.5em;
+	font-size: 1.1em;
+	line-height: 1.2em
 }
 
-.blogPreview p{
-	font-size: 1.15em;
+
+.blogArticleTags{
+	text-align: left;
+	margin-top: 5px;
 }
 
-.blogArticleFooter{
-	text-align: right;
-}
-
-/*.blogArticleFooter a{
+/*.blogArticleTags a{
 	display: inline-block;
 	background: #61C758;
 	color: #fff;
 	padding: 5px;
 
 }*/
-.blogArticleFooter a:after{
+.blogArticleTags a:after{
 	content: ""
 }
 
@@ -1297,6 +1296,31 @@ pre{
 }
 .topSmallMargin{
 	margin-top: 12px;
+}
+
+/*Tag Icon*/
+
+.tagIconSubTriangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 10px 0 10px 10px;
+	border-color: transparent transparent transparent #bbb;
+	float: left;
+}
+
+.tagIconSubSquare{
+	width: 15px;
+	height: 20px;
+	background: #bbb;
+	float: left;
+}
+
+.tagIconFull{
+	width: 25px;
+	height: 27px;
+	padding: 7px 10px 0 0;
+	float: left;
 }
 
 
