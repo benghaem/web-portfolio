@@ -12,7 +12,7 @@ var slideLocation = 1
 $( document ).ready(function() {
 mainContainCacheVal = $('.mainContain');
 naviContainCacheVal = $('.naviContain');
-naviToggleCacheVal =$('.naviToggle');
+naviToggleCacheVal = $('.naviToggle');
 
 	//force footer to bottom
 	mainContainCacheVal.css("min-height", ($(window).height()-155));
@@ -23,6 +23,8 @@ naviToggleCacheVal =$('.naviToggle');
 	//hide calendar elements
 	$('.blogArchivePanelHidden').hide()
 
+	//extend blogsidebar to page height
+	$('.blogSidebarReserve').css('height',$('.mainContain').height());
 
 	//compact the footer
 	//$('.footer').css("height", "70px")
@@ -122,6 +124,17 @@ $(window).resize(function () {
 	mainContainCacheVal.css("min-height", ($(window).height()-155));
 	showcaseSlideTo(1)
 })
+
+$(window).scroll(function() {
+	if (getBottomDist(window) <= 220) {
+		$('.blogSidebar').addClass('blogSidebarAbsolute');
+		console.log("woah")
+	}
+	else {
+		$('.blogSidebar').removeClass('blogSidebarAbsolute');
+		console.log("safe")
+	};
+});
 
 //speed values in ms
 function toggleNavigation(speed){
@@ -225,3 +238,9 @@ function getPageColor(){
 	};
 }
 
+function getBottomDist(element){
+	var offset = window.pageYOffset
+	var bottomDist = $(document).height() - offset - $(window).height()
+	console.log(bottomDist)	
+	return bottomDist
+	};
