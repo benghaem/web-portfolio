@@ -1,0 +1,234 @@
+/*Benjamin Ghaemmaghami*/
+/*2012*/
+
+html {
+	overflow-y: scroll; 
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	height: auto;
+	background: url(../webimgs/loading.gif) no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+}
+p{
+	color: #000;
+	margin-top: 0px;
+}
+
+div.infoblackout{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 3;
+	position: fixed;
+	top: 0px;
+}
+div.infopopup{
+	width: 400px;
+	height: 300px;
+	border-radius: 5px;
+	z-index: 10;
+	position: fixed;
+	margin-left: -202px;
+	top: 15%;
+	left: 50%;
+	background-color: #fff;
+	border: 4px solid #000;
+	text-align: center;
+	font-family: Georgia, serif;
+}
+div.infopopup p{
+	margin: 20px 30px 0px 30px
+}
+div.infopopup h2{
+	margin: 20px 30px 0px 30px
+}
+div.closepop{
+	width: 50px;
+	height: 25px;
+	margin-top: 45px;
+	display: inline-block;
+	background-color: #ccc;
+}
+
+div.infohold{
+	display: none;
+}
+
+div.header{
+	text-align: center;
+	font-family: Georgia, serif;
+	border-bottom: solid #000 2px;
+	height: 95px;
+	position: fixed;
+	width: 900px;
+	background-color: #fff;
+	margin: auto;
+	padding-top: 0px;
+	top: 0px;
+	}
+
+h1{
+	font-family: Georgia, serif;
+	font-size: 28px;
+	line-height: 24px;
+}
+h2{
+	font-family: Georgia, serif;
+	font-size: 16px;
+	font-weight: 500px;
+}
+h3{
+	font-family: Georgia, serif;
+	font-size: 22px;
+}
+div.container{
+	margin: auto;
+	width: 900px;
+	height: auto;
+	padding: 0px;
+	margin-top: 0px;
+
+}
+
+div.portback{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	margin-left: -65px;
+	margin-top: 25px;
+	cursor: pointer;
+	background: url(../webimgs/backbttn.png);
+}
+
+div.gallcenter{
+	text-align: center;
+	width: auto;
+	margin: auto;
+}
+
+div.imagebox{
+	border: 2px #000 solid;
+	height: 185px;
+	width: 185px;
+	float: left;
+	margin: 22px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	background: url(../webimgs/strbk.png);
+}
+
+div.imagebox *{
+	vertical-align: middle;
+	text-align: center;
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+}
+div.imagebox a#main{
+	color: #000;
+	text-transform: uppercase;
+}
+
+div.imagebox a#main:hover{
+	border-bottom: #000 2px dashed;
+	margin-top: 2px;
+}
+div.imagebox span {
+    display: inline-block;
+    height: 100%;
+}
+div.content{
+	width: 700px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 150px;
+	margin-top: 95px;
+	background-color: #fff;
+	min-height: 600px;
+}
+
+div.content img#inline{
+	float: left;
+	margin: 25px 10px 5px 0px;
+	width: 250px;
+}
+
+div.title{
+	float: right;
+	height: 50px;
+	border-bottom: solid #000 2px;
+	width: 440px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+
+div.createinfo{
+	height: 25px;
+	width: 25px;
+	border: 2px solid #000;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background: #fff;
+	font-size: 18px;
+	text-align: center;
+	font-family: Georgia, serif;
+	z-index: 4;
+
+}
+div.createinfo p{
+	margin-top:2px;
+	cursor: pointer;
+}
+
+div.footnav{
+	height: 100px;
+	width: 900px;
+	border-top: solid #000 2px;
+	background: #fff;
+	position: fixed;
+	bottom: 0px;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.footnav #navi{
+	position: relative;
+	font-family: Georgia, serif;
+}
+div.footnav #navi ul{
+	list-style-type: none;
+	padding-left: none;
+	width: 900px;
+	margin: 0px;
+	text-align: center;
+	padding: 0px;
+}
+
+div.footnav #navi ul li{
+	display: inline-block;
+	margin: 0px 30px 0px 30px;
+
+}
+div.footnav #navi ul li a{
+	margin-top: 20px;
+	float: left;
+	display: block;
+	width: 150px;
+	height: 100px;
+	font-size: 28px;
+	color: #000;
+	text-decoration: none;
+
+
+}
+div.footnav #navi ul li a:hover{
+	background: url(../webimgs/hover.png) no-repeat 0px 35px;
+}div.footnav #navi ul li a.current{
+	background: url(../webimgs/hover.png) no-repeat 0px 35px;
+}
