@@ -20,21 +20,6 @@ naviToggleCacheVal = $('.naviToggle');
 	//place static items
 	naviContainCacheVal.css("left", Math.round(($(window).width()-naviContainCacheVal.outerWidth())/2));
 
-	//hide calendar elements
-	$('.blogArchivePanelHidden').hide()
-
-	//extend blogsidebar to page height
-	$('.blogSidebarReserve').css('height',$('.mainContain').height());
-
-
-	//enable navigation
-	// $('.naviToggle').click(
-	// 	function () {
-	// 		//modal helper creates a black fade effect over the screen
-	// 		$('.modalBlackout').fadeToggle(600)
-	// 		toggleNavigation(600)
-	// })
-
 	//statements that allow the user to close various modals via the modal helper element
 	$('.modalBlackout').click(
 		function () {
@@ -61,32 +46,6 @@ naviToggleCacheVal = $('.naviToggle');
   			naviToggleCacheVal.removeAttr("style")
   		})
   		
-  	//toggle the month calendar elements on the blog pages
-  	$('.blogArchiveToggle').click(function(){
-  		//get year html-data element
-  		var panelYear = $(this).data("year")
-
-  		//get panel location
-  		var diff = $('.blogArchiveSlider').position().left;
-  		//toggle panel location based on width of element
-  		diff = (diff + $('.blogArchiveSlider').width()/2) *-1
-
-  		$('.'+panelYear+'CalHidden').show()
-  		$('.blogArchiveSlider').animate({
-  			left: -1*$('.blogArchiveSlider').width()/2},
-  			400, function() {
-  			/* stuff to do after animation is complete */
-  		});
-  	})
-
-  	$('.blogArchiveReturn').click(function() {
-		$('.blogArchiveSlider').animate({
-  			left: "0"},
-  			400, function() {
-  			$('.blogArchivePanelHidden').hide()
-  		});
-  	});
-
   	//activate the contact modal
   	$('.contactOpen').click(function(){
   		createModal("contact","Feel free to contact me with work or questions at: <a href='mailto:contact@benghaem.com'>contact@benghaem.com</a>",getPageColor(),"text")
@@ -115,14 +74,6 @@ $(window).resize(function () {
 	showcaseSlideTo(1)
 })
 
-$(window).scroll(function() {
-	if (getBottomDist(window) <= 209 /*Footer total height inc. margin*/) {
-		$('.blogSidebar').addClass('blogSidebarAbsolute');
-	}
-	else {
-		$('.blogSidebar').removeClass('blogSidebarAbsolute');
-	};
-});
 
 //speed values in ms
 function toggleNavigation(speed){
@@ -225,9 +176,3 @@ function getPageColor(){
 			return colorClasses[i]
 	};
 }
-
-function getBottomDist(){
-	var offset = $('.blogSidebarTracker').offset()
-	var bottomDist = $(document).height() - offset.top - $('.blogSidebar').height()
-	return bottomDist
-	};

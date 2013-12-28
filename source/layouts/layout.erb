@@ -9,13 +9,15 @@
 	
 	<!-- Use title if it's in the page YAML frontmatter -->
 	<title> <%=current_page.data.title || yield_content(:title) || "Tag: " + tagname%> - Ben Ghaem</title>
-	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script> -->
+	<!-- Load CDN JQuery -->
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<!-- Load Favicon -->
 	<link rel="icon" type="image/png" href="http://benghaem.com/imgs/favicon.png">
+	<!-- Load Google Webfonts -->
 	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-
-	
+	<!-- Load local scripts/styles -->
 	<%= stylesheet_link_tag "normalize", "main", "prism" %>
-	<%= javascript_include_tag  "jqueryLocal.min", "prism", "script" %>
+	<%= javascript_include_tag  "prism", "script" %>
   	</head>
   	<script>
 		WebFont.load({
@@ -41,7 +43,6 @@
 			</div>
 				<%= yield %>
 			<div class="footer">
-				<!-- <img src="/imgs/dropd.png" class="footerToggle"> -->
 				<div class="footerButtonHold">
 					<div class="footerButton contactOpen">contact</div>
 					<a href="/cv/"><div class="footerButton">curriculum vitae</div></a>
