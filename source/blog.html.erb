@@ -19,7 +19,7 @@ per_page: 8
 						</div>
 						<% if article.data.headerImg == true %>
 						<a href="<%= article.url %>" class="blogArticleInfoImgWrap">
-							<img src="img/<%= article.date.strftime('%Y-%m-%d') %>.jpg" class="slidingImgWrapLoc<%= article.data.imgWrapLoc || 50%>"></img>
+							<img src="/../blog/img/<%= article.date.strftime('%Y-%m-%d') %>.jpg" class="slidingImgWrapLoc<%= article.data.imgWrapLoc || 50%>"></img>
 						<% end %>
 						</a>
 					</div>
