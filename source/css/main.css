@@ -630,12 +630,21 @@ pre{
 	border-bottom: #61C758 solid 2px;
 }
 
+.blogArticleInfoImgWrap{
+	height: 0px;
+	width: 100%;
+}
+
+.blogArticleInfoImgWrap img{
+	margin-top: -5px;
+	margin-bottom: -5px;
+}
 
 .blogArticleInfoOverlay{
 	position: absolute;
 	bottom: 5px;
 	z-index: 10;
-	width: 100%;
+	width: auto;
 }
 
 .blogArticleInfoOverlay h2{
@@ -1307,6 +1316,23 @@ pre{
 	margin-top: 12px;
 }
 
+/*These classes create a cool scrolling effect as resized*/
+.slidingImgWrapLoc25{
+	margin-left: calc(((600px - 100%) *-.25) - 5px);
+}
+.slidingImgWrapLoc33{
+	margin-left: calc(((600px - 100%) *-.33) - 5px);
+}
+.slidingImgWrapLoc50{
+	margin-left: calc(((600px - 100%) *-.50) - 5px);
+}
+.slidingImgWrapLoc66{
+	margin-left: calc(((600px - 100%) *-.66) - 5px);
+}
+.slidingImgWrapLoc75{
+	margin-left: calc(((600px - 100%) *-.75) - 5px);
+}
+
 /*Tag Icon*/
 
 .tagIconSubTriangle{
@@ -1451,6 +1477,7 @@ pre{
 }
 
 @media (max-width : 640px){
+
 
 	.showcase{
 		width: 100%;

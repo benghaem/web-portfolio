@@ -3,6 +3,8 @@ title: eight
 date: 2013-08-05 5:42 UTC
 tags: Includes Links
 colorClass: CCmutedGreen
+headerImg: true
+imgWrapLoc: 75
 ---
 Some sort of article that talks about things and includes links in the body text.
 READMORE

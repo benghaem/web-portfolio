@@ -17,11 +17,15 @@ per_page: 8
 								<a href="<%= article.url %>"><%= article.title %></a>
 							</h2>
 						</div>
-						<img src="<%= article.data.headerImg || 'img/600x150.gif' %>"></img>
+						<% if article.data.headerImg == true %>
+						<a href="<%= article.url %>" class="blogArticleInfoImgWrap">
+							<img src="img/<%= article.date.strftime('%Y-%m-%d') %>.jpg" class="slidingImgWrapLoc<%= article.data.imgWrapLoc || 50%>"></img>
+						<% end %>
+						</a>
 					</div>
 					<h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>
 					<div class="blogPreview">
-						<p><%= lorem.paragraphs 2 %>
+						<p>
 						<%= article.summary %>
 						</p>
 						<a href="<%= article.url %>">...Continue Reading</a>

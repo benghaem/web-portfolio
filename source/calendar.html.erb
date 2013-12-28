@@ -27,7 +27,7 @@ colorClass: CCmutedGreen
   <% end %>
 </h2>
   <% page_articles.each_with_index do |article, i| %>
-          <article>
+      <article>
         <div class="blogArticle">
           <div class="blogArticleInfo">
             <div class="blogArticleInfoOverlay">
@@ -35,11 +35,15 @@ colorClass: CCmutedGreen
                 <a href="<%= article.url %>"><%= article.title %></a>
               </h2>
             </div>
-            <img src="<%= article.data.headerImg || '../../img/600x150.gif' %>"></img>
+            <% if article.data.headerImg == true %>
+            <a href="<%= article.url %>" class="blogArticleInfoImgWrap">
+              <img src="img/<%= article.date.strftime('%Y-%m-%d') %>.jpg" class="slidingImgWrapLoc<%= article.data.imgWrapLoc || 50%>"></img>
+            <% end %>
+            </a>
           </div>
           <h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>
           <div class="blogPreview">
-            <p><%= lorem.paragraphs 2 %>
+            <p>
             <%= article.summary %>
             </p>
             <a href="<%= article.url %>">...Continue Reading</a>
@@ -57,8 +61,6 @@ colorClass: CCmutedGreen
           </div>
         </div>
       </article>
-   <!--  <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li> -->
-
   <% end %>
 <div class="blogPageSelect">
     <div class="blogPre">

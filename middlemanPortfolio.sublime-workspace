@@ -4,16 +4,64 @@
 		"selected_items":
 		[
 			[
-				"max",
-				"max-width"
+				"min",
+				"min-height"
 			],
 			[
-				"pa",
-				"padding-right"
+				"blogArti",
+				"blogArticle"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"blogArticleIn",
+				"blogArticleInfoOverlay"
+			],
+			[
+				"blo",
+				"blogArticle"
+			],
+			[
+				"rg",
+				"rgba()"
 			],
 			[
 				"mar",
 				"margin"
+			],
+			[
+				"blogArt",
+				"blogArticle"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"show",
+				"showcaseItem"
+			],
+			[
+				"gl",
+				"glamorTextHold"
+			],
+			[
+				"ben",
+				"benfull"
+			],
+			[
+				"showcase",
+				"showcaseActive"
+			],
+			[
+				"pre",
+				"pre-wrap"
+			],
+			[
+				"max",
+				"max-width"
 			],
 			[
 				"fon",
@@ -40,10 +88,6 @@
 				"footerButtonHold"
 			],
 			[
-				"show",
-				"showcase"
-			],
-			[
 				"main",
 				"mainContainCacheVal"
 			],
@@ -64,16 +108,8 @@
 				"scroll"
 			],
 			[
-				"min",
-				"min-width"
-			],
-			[
 				"bar",
 				"background-color"
-			],
-			[
-				"pad",
-				"padding-bottom"
 			],
 			[
 				"out",
@@ -86,10 +122,6 @@
 			[
 				"showcasePage",
 				"showcasePageHold"
-			],
-			[
-				"showcase",
-				"showcasePage"
 			],
 			[
 				"sh",
@@ -176,10 +208,6 @@
 				"css	.css() - single"
 			],
 			[
-				"blo",
-				"blogArchive"
-			],
-			[
 				"an",
 				"animate	.animate() with callback"
 			],
@@ -226,10 +254,6 @@
 			[
 				"tex",
 				"text-align"
-			],
-			[
-				"blogArt",
-				"blogArticleInfo"
 			],
 			[
 				"font",
@@ -471,7 +495,7 @@
 			"file": "source/projects.html.erb",
 			"settings":
 			{
-				"buffer_size": 1528,
+				"buffer_size": 1852,
 				"line_ending": "Unix"
 			}
 		},
@@ -479,7 +503,7 @@
 			"file": "source/blog.html.erb",
 			"settings":
 			{
-				"buffer_size": 1319,
+				"buffer_size": 1501,
 				"line_ending": "Unix"
 			}
 		},
@@ -487,7 +511,7 @@
 			"file": "source/layouts/projects_preview.erb",
 			"settings":
 			{
-				"buffer_size": 454,
+				"buffer_size": 443,
 				"line_ending": "Unix"
 			}
 		},
@@ -495,7 +519,7 @@
 			"file": "source/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 5322,
+				"buffer_size": 4732,
 				"line_ending": "Unix"
 			}
 		},
@@ -533,14 +557,6 @@
 			}
 		},
 		{
-			"file": "/Users/Ben/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 160,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "source/404.html.erb",
 			"settings":
 			{
@@ -558,10 +574,18 @@
 			}
 		},
 		{
+			"file": "source/blog/2012-08-12-eight.html.markdown",
+			"settings":
+			{
+				"buffer_size": 109,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "source/layouts/layout.erb",
 			"settings":
 			{
-				"buffer_size": 2201,
+				"buffer_size": 2089,
 				"line_ending": "Unix"
 			}
 		},
@@ -577,7 +601,7 @@
 			"file": "source/_blog_sidebar.erb",
 			"settings":
 			{
-				"buffer_size": 1250,
+				"buffer_size": 1232,
 				"line_ending": "Unix"
 			}
 		},
@@ -585,7 +609,7 @@
 			"file": "source/layouts/blog_article.erb",
 			"settings":
 			{
-				"buffer_size": 722,
+				"buffer_size": 735,
 				"line_ending": "Unix"
 			}
 		},
@@ -593,7 +617,7 @@
 			"file": "source/css/main.css",
 			"settings":
 			{
-				"buffer_size": 20100,
+				"buffer_size": 22194,
 				"line_ending": "Windows"
 			}
 		},
@@ -601,7 +625,7 @@
 			"file": "source/js/script.js",
 			"settings":
 			{
-				"buffer_size": 9275,
+				"buffer_size": 9379,
 				"line_ending": "Windows"
 			}
 		},
@@ -612,22 +636,30 @@
 				"buffer_size": 577,
 				"line_ending": "Unix"
 			}
-		},
-		{
-			"file": "source/projects/bioresearch/index.hmtl.erb",
-			"settings":
-			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
-			}
 		}
 	],
 	"build_system": "Packages/User/JekyllFixer.sublime-build",
 	"command_palette":
 	{
-		"height": 167.0,
+		"height": 347.0,
 		"selected_items":
 		[
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"git",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"packl",
+				"Package Control: Add Channel"
+			],
 			[
 				"live",
 				"LiveReload: Enable/disable plug-ins"
@@ -638,10 +670,6 @@
 			],
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
-				"pack",
 				"Package Control: Install Package"
 			]
 		],
@@ -662,6 +690,8 @@
 	},
 	"file_history":
 	[
+		"/Users/Ben/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/Ben/MiddleMan/Git Portfolio/source/projects/bioresearch/index.hmtl.erb",
 		"/Users/Ben/MiddleMan/Portfolio V2/source/projects/photoport/raw/ajax/about.html",
 		"/Users/Ben/MiddleMan/Portfolio V2/source/projects/photoport/raw/ajax/pricing.html",
 		"/Users/Ben/MiddleMan/Portfolio V2/source/projects/photoport/raw/ajax/contact.html",
@@ -766,6 +796,29 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"5%",
+			"19",
+			"15.75",
+			"div class=\"showcaseItem\"",
+			"div class=\"showcase\"",
+			"<p>",
+			"p",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"   ",
+			"  ",
+			"    ",
+			"   ",
+			"  ",
 			"h2",
 			"$",
 			"<li>",
@@ -870,30 +923,7 @@
 			"footer",
 			"90",
 			"90deg",
-			"90",
-			";\n",
-			"arch",
-			"8",
-			",0",
-			"1",
-			".3",
-			".7",
-			".9",
-			"perspective(17px)",
-			"rotate3d(1, 2.0, 3.0, 10deg)",
-			"translateZ(-300px)",
-			"ateX",
-			"scale",
-			"under",
-			"url",
-			"/images/showcase",
-			"200px",
-			"backgroundFiller",
-			"2px",
-			"850",
-			"page",
-			"50",
-			">\n"
+			"90"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -913,7 +943,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -921,15 +951,15 @@
 					"file": "source/projects.html.erb",
 					"settings":
 					{
-						"buffer_size": 1528,
+						"buffer_size": 1852,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1483,
-								1483
+								1838,
+								1838
 							]
 						],
 						"settings":
@@ -949,15 +979,15 @@
 					"file": "source/blog.html.erb",
 					"settings":
 					{
-						"buffer_size": 1319,
+						"buffer_size": 1501,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								67,
-								67
+								231,
+								231
 							]
 						],
 						"settings":
@@ -966,7 +996,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 74.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -976,22 +1006,22 @@
 					"file": "source/layouts/projects_preview.erb",
 					"settings":
 					{
-						"buffer_size": 454,
+						"buffer_size": 443,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								123,
-								123
+								432,
+								432
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1004,19 +1034,20 @@
 					"file": "source/index.html.erb",
 					"settings":
 					{
-						"buffer_size": 5322,
+						"buffer_size": 4732,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								309,
-								309
+								329,
+								329
 							]
 						],
 						"settings":
 						{
+							"spell_check": true,
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
@@ -1066,8 +1097,8 @@
 						"selection":
 						[
 							[
-								77,
-								77
+								787,
+								787
 							]
 						],
 						"settings":
@@ -1120,8 +1151,8 @@
 						"selection":
 						[
 							[
-								601,
-								601
+								467,
+								467
 							]
 						],
 						"settings":
@@ -1138,32 +1169,6 @@
 				},
 				{
 					"buffer": 8,
-					"file": "/Users/Ben/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-					"settings":
-					{
-						"buffer_size": 160,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								115,
-								115
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 9,
 					"file": "source/404.html.erb",
 					"settings":
 					{
@@ -1190,7 +1195,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "source/projects/bioresearch/index.html.markdown.erb",
 					"settings":
 					{
@@ -1214,11 +1219,37 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "source/blog/2012-08-12-eight.html.markdown",
+					"settings":
+					{
+						"buffer_size": 109,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								98
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1226,15 +1257,15 @@
 					"file": "source/layouts/layout.erb",
 					"settings":
 					{
-						"buffer_size": 2201,
+						"buffer_size": 2089,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								703,
-								703
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1261,8 +1292,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								917,
+								917
 							]
 						],
 						"settings":
@@ -1281,15 +1312,15 @@
 					"file": "source/_blog_sidebar.erb",
 					"settings":
 					{
-						"buffer_size": 1250,
+						"buffer_size": 1232,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								468,
-								468
+								611,
+								611
 							]
 						],
 						"settings":
@@ -1308,22 +1339,22 @@
 					"file": "source/layouts/blog_article.erb",
 					"settings":
 					{
-						"buffer_size": 722,
+						"buffer_size": 735,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								404,
-								404
+								708,
+								708
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1336,15 +1367,15 @@
 					"file": "source/css/main.css",
 					"settings":
 					{
-						"buffer_size": 20100,
+						"buffer_size": 22194,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4640,
-								4640
+								8753,
+								8753
 							]
 						],
 						"settings":
@@ -1363,22 +1394,22 @@
 					"file": "source/js/script.js",
 					"settings":
 					{
-						"buffer_size": 9275,
+						"buffer_size": 9379,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								959,
-								959
+								392,
+								392
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": 1.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1396,39 +1427,13 @@
 						"selection":
 						[
 							[
-								0,
-								139
+								71,
+								71
 							]
 						],
 						"settings":
 						{
 							"spell_check": true,
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 18,
-					"file": "source/projects/bioresearch/index.hmtl.erb",
-					"settings":
-					{
-						"buffer_size": 0,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,

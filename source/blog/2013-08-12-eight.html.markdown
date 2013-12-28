@@ -3,6 +3,8 @@ title: eight
 date: 2013-08-12 23:42 UTC
 tags: Musings
 colorClass: CCmutedGreen
+headerImg: True
+imgWrapLoc: 33
 ---
 I am currently in the middle of finalizing the devlopment of my portfolio site and thought that it would be a good time to report how the process has progressed so far and what I have learned.
 
