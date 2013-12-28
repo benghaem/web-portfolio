@@ -31,55 +31,32 @@
 ###
 # Helpers
 helpers do
-#  def listTags
-#   tagsList = []
-#     blog.articles.each do |article|
-#       article.tags.each do |tagname|
-#         if tagsList.include?(tagname) != true
-#           tagsList.push(tagname)
-#         end
-#       end 
-#     end
-#     return tagsList 
-#   end
-#   def listYears(years)
-#   	yearsList = []
-#     years.each do |year|
-#     	if yearsList.include?(year) != true
-#     		yearsList.push(year)
-# 		end
-# 	end
-# 	return yearsList
-#   end
-#   def listMonths(months)
-#   	monthsList = []
-#     months.each do |month|
-#     	if monthsList.include?(month) != true
-#     		monthsList.push(month)
-# 		end
-# 	end
-# 	return monthsList
-#   end
+## Iterates through all blog files and finds novel tags
  def listTags
+  ## Create arrays to store string tag names
   tagsList = []
   tagsListFull = []
   tagsListOrder = []
     blog.articles.each do |article|
       article.tags.each do |tagname|
+        ## Check if tag exists in array
         if tagsList.include?(tagname) != true
           tagsList.push(tagname)
         end
           tagsListFull.push(tagname)
       end 
     end
+    ## Count how many of each tag and place into a new array
     tagsList.each do |checkTag|
         tagsListOrder.push( [tagsListFull.count(checkTag).to_i ,checkTag] )
     end
+    ## Sort the new array
     tagsListOrder = tagsListOrder.sort { |x, y| y[0] <=> x[0] }
     return tagsListOrder
     end
 
 def listYears()
+  ## Iterates through all blog files and finds novel years
   	yearsList = []
     blog.articles.each do |article|
     	if yearsList.include?(article.date.strftime('%Y')) != true
@@ -90,6 +67,7 @@ def listYears()
 	end
 
 def listMonths(year)
+  ## Iterates through all blog files given a certain year and finds novel months
     monthsList=[]
     	blog.articles.each do |article|
     	    if article.date.strftime('%Y') == year
