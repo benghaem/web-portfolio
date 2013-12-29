@@ -107,11 +107,15 @@ pre{
 }
 
 .error404{
-	width: 500px;
-	font-size: 4em;
+	width: 92%;
 	text-align: center;
 	font-weight: 200;
 	margin: auto;	
+}
+
+.error404 span{
+	font-size: 6em;
+	color: inherit;
 }
 
 /*Navigation Rules*/
