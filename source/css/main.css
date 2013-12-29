@@ -906,7 +906,7 @@ pre{
 }
 
 .footerButtonHold{
-	width: 510px;
+	width: 765px;
 	height: 75px;
 	margin: 0px auto 20px auto;
 	position: relative;
@@ -1365,7 +1365,7 @@ pre{
 
 /*Media Query Responsive Classes*/
 /* iPads (portrait and landscape) ----------- */
-@media (max-width: 1920px;){
+@media (max-width: 1920px){
 	.glamorShot{
 	background: url(/imgs/benfull_1920.jpg) no-repeat center;
 	}
@@ -1471,12 +1471,19 @@ pre{
 }
 
 @media (max-width: 768px){
-		.projectShowcase{
+	.projectShowcase{
 		width: 640px;
 	}
 	.showcaseItem{
 		margin: 20px 19px 0 19px;
 		position: relative;
+	}
+
+	.githubFooterButton{
+		display: none;
+	}
+	.footerButtonHold{
+		width: 510px;
 	}
 }
 
