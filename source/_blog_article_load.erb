@@ -10,6 +10,10 @@
 			<a href="<%= article.url %>" class="blogArticleInfoImgWrap">
 				<img src="/../blog/img/<%= article.date.strftime('%Y-%m-%d') %>.jpg" class="slidingImgWrapLoc<%= article.data.imgWrapLoc || 50%>"></img>
 			<% end %>
+			<% if article.data.headerImg == "placeHold" %>
+			<a href="<%= article.url %>" class="blogArticleInfoImgWrap">
+				<img src="/../blog/img/600x150.gif" class="slidingImgWrapLoc<%= article.data.imgWrapLoc || 50%>"></img>
+			<% end %>
 			</a>
 		</div>
 		<h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>

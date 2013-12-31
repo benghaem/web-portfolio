@@ -9,7 +9,7 @@ per_page: 8
 	<div class="blogMain">
 		<h2>Recent Posts:</h2>
 		<% page_articles.each do |article| %>
-			<%= partial "blog_article_load" %>
+			<%= partial "blog_article_load", locals: { article: article }%>
 		<% end %>
 		<div class="blogPageSelect">
 			<div class="blogPre">
