@@ -71,7 +71,7 @@ $(window).resize(function () {
 	naviContainCacheVal.css("left", Math.round(($(window).width()-naviContainCacheVal.outerWidth()))/2);
 	// naviToggleCacheVal.css("left", Math.round(($(window).width()-naviToggleCacheVal.width())/2));
 	mainContainCacheVal.css("min-height", ($(window).height()-245));
-	showcaseSlideTo(1)
+	showcaseSlideTo(1);
 })
 
 
@@ -154,6 +154,7 @@ function closeModal(){
 function showcaseSlideTo(location){
 	//clear animation
 	$('.showcasePageHold').stop(true, true)
+	$('.showcaseActive').stop(true, true)
 	//if location given is out of range reset it to the respective edge
 	if (location > 5){
 		location = 5

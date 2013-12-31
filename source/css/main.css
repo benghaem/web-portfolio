@@ -10,7 +10,6 @@ html{
 
 body{
 	margin:0 0 0 0;
-	/*background: url(noisebk.png);*/
 	font-family:'Oxygen', sans-serif;
 	color: #000;
 	background: #F2F2F2;
@@ -1364,7 +1363,6 @@ pre{
 
 
 /*Media Query Responsive Classes*/
-/* iPads (portrait and landscape) ----------- */
 @media (max-width: 1920px){
 	.glamorShot{
 	background: url(/imgs/benfull_1920.jpg) no-repeat center;
@@ -1488,8 +1486,6 @@ pre{
 }
 
 @media (max-width : 640px){
-
-
 	.showcase{
 		width: 100%;
 		overflow: hidden;
@@ -1618,8 +1614,3 @@ pre{
 		padding: 0px 0px 0px 0px;
 	}
 }
-
-
-
-
-
