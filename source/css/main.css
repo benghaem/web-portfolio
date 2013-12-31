@@ -1475,6 +1475,41 @@ pre{
 		border-top: 2px solid #4D4D4D;
 		padding-top: 20px;
 	}
+	.cvSegment{
+		width: 90%;
+		margin: 0 5% 0 5%;
+	}
+	.cvSegmentContent{
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+	.cvSegmentContent ul{
+		margin: 0 20px 0 0;
+	}
+	.cvSegmentTitle{
+		width: 100%;
+		height: auto;
+		text-align: left;
+		margin: 5px 0 0 0;
+		padding: 0 0 0 0;
+	}
+	.cvName{
+		width: 100%;
+		padding-top: 0px;
+		margin: 0;
+	}
+	.cvContact{
+		width: 100%;
+		clear: both;
+		padding-top: 5px;
+		margin-top: 5px;
+		height: auto;
+		border-top: 2px solid #aaaaaa;
+	}
+	.cvContact ul{
+		margin: 0 0 0 0;
+	}
 }
 
 @media (max-width: 768px){
@@ -1575,6 +1610,12 @@ pre{
 		width: 270px;
 		margin-left: 110px;
 		padding-top: 2px;
+	}
+	.cvSegmentContentul{
+		margin-left: 0px;
+	}
+	.cvSegmentTitle{
+		text-align: center;
 	}
 }
 
