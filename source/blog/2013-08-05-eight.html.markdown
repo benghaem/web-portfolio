@@ -1,7 +1,7 @@
 ---
 title: eight
 date: 2013-08-05 5:42 UTC
-tags: Includes Links
+tags: Includes Links, Musings
 colorClass: CCmutedGreen
 headerImg: true
 imgWrapLoc: 75
