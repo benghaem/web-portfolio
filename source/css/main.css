@@ -1466,6 +1466,16 @@ pre{
 		max-width: 600px;
 		padding:0 0 0 0;
 	}
+	.projectText{
+		width: 80%;
+		margin: 0 10% 0 10%;
+	}
+	.projectInfo{
+		width: 80%;
+		margin: 0 10% 0 10%;
+		border-top: 2px solid #4D4D4D;
+		padding-top: 20px;
+	}
 }
 
 @media (max-width: 768px){
