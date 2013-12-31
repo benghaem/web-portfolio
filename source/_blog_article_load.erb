@@ -1,0 +1,34 @@
+<article>
+	<div class="blogArticle">
+		<div class="blogArticleInfo">
+			<div class="blogArticleInfoOverlay">
+			 	<h2>
+					<a href="<%= article.url %>"><%= article.title %></a>
+				</h2>
+			</div>
+			<% if article.data.headerImg == true %>
+			<a href="<%= article.url %>" class="blogArticleInfoImgWrap">
+				<img src="/../blog/img/<%= article.date.strftime('%Y-%m-%d') %>.jpg" class="slidingImgWrapLoc<%= article.data.imgWrapLoc || 50%>"></img>
+			<% end %>
+			</a>
+		</div>
+		<h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>
+		<div class="blogPreview">
+			<p>
+			<%= article.summary %>
+			</p>
+			<a href="<%= article.url %>">...Continue Reading</a>
+		</div>
+		<div class="blogArticleTags">
+			<h3>
+			<div class="tagIconFull">
+				<div class="tagIconSubSquare"></div>
+				<div class="tagIconSubTriangle"></div>
+			</div>
+			<% article.tags.each do |tagname| %>
+		 		<a href="<%= tag_path(tagname) %>"><%= tagname %></a>
+		 	<% end %>
+			</h3>
+		</div>
+	</div>
+</article>
