@@ -11,7 +11,6 @@ html{
 
 body{
 	margin:0 0 0 0;
-	/*background: url(noisebk.png);*/
 	font-family:'Oxygen', sans-serif;
 	color: #000;
 	background: #F2F2F2;
@@ -370,7 +369,6 @@ pre{
 	position: relative;
 	top: 0px;
 	left: 0px;
-	width: 850px;
 	height: 350px;
 	user-select:none;
 	z-index: 1;
@@ -907,7 +905,7 @@ pre{
 }
 
 .footerButtonHold{
-	width: 510px;
+	width: 765px;
 	height: 75px;
 	margin: 0px auto 20px auto;
 	position: relative;
@@ -1365,8 +1363,7 @@ pre{
 
 
 /*Media Query Responsive Classes*/
-/* iPads (portrait and landscape) ----------- */
-@media (max-width: 1920px;){
+@media (max-width: 1920px){
 	.glamorShot{
 	background: url(/imgs/benfull_1920.jpg) no-repeat center;
 	}
@@ -1469,21 +1466,71 @@ pre{
 		max-width: 600px;
 		padding:0 0 0 0;
 	}
+	.projectText{
+		width: 80%;
+		margin: 0 10% 0 10%;
+	}
+	.projectInfo{
+		width: 80%;
+		margin: 0 10% 0 10%;
+		border-top: 2px solid #4D4D4D;
+		padding-top: 20px;
+	}
+	.cvSegment{
+		width: 90%;
+		margin: 0 5% 0 5%;
+	}
+	.cvSegmentContent{
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 5px;
+	}
+	.cvSegmentContent ul{
+		margin: 0 20px 0 0;
+	}
+	.cvSegmentTitle{
+		width: 100%;
+		height: auto;
+		text-align: left;
+		margin: 5px 0 0 0;
+		padding: 0 0 0 0;
+	}
+	.cvName{
+		width: 100%;
+		padding-top: 0px;
+		margin: 0;
+	}
+	.cvContact{
+		width: 100%;
+		clear: both;
+		padding-top: 5px;
+		margin-top: 5px;
+		height: auto;
+		border-top: 2px solid #aaaaaa;
+	}
+	.cvContact ul{
+		margin: 0 0 0 0;
+	}
 }
 
 @media (max-width: 768px){
-		.projectShowcase{
+	.projectShowcase{
 		width: 640px;
 	}
 	.showcaseItem{
 		margin: 20px 19px 0 19px;
 		position: relative;
 	}
+
+	.githubFooterButton{
+		display: none;
+	}
+	.footerButtonHold{
+		width: 510px;
+	}
 }
 
 @media (max-width : 640px){
-
-
 	.showcase{
 		width: 100%;
 		overflow: hidden;
@@ -1565,6 +1612,12 @@ pre{
 		margin-left: 110px;
 		padding-top: 2px;
 	}
+	.cvSegmentContentul{
+		margin-left: 0px;
+	}
+	.cvSegmentTitle{
+		text-align: center;
+	}
 }
 
 @media (max-width : 360px){
@@ -1612,8 +1665,3 @@ pre{
 		padding: 0px 0px 0px 0px;
 	}
 }
-
-
-
-
-
