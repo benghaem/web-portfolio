@@ -1442,6 +1442,7 @@ pre{
 	}
 	.projectShowcase{
 		width: 768px;
+		padding-top: 0px;
 	}
 	.showcaseItem{
 		margin: 20px 40.5px 0 40.5px;
