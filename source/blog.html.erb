@@ -11,27 +11,7 @@ per_page: 8
 		<% page_articles.each do |article| %>
 			<%= partial "blog_article_load", locals: { article: article }%>
 		<% end %>
-		<div class="blogPageSelect">
-			<div class="blogPre">
-				<% if paginate %>
-					<% if prev_page %>
-						<%= link_to 'Previous', prev_page %>
-					<% end %>
-				<%end %>
-			</div>
-			<div class="blogCurrent">
-				<% if paginate && num_pages > 1 %>
-					<span><%= page_number %> / <%= num_pages %></span>
-				<% end %>
-			</div>
-			<div class="blogNext">
-				<% if paginate %>
-					<% if next_page %>
-					<%= link_to 'Next', next_page %>
-					<% end %>
-				<% end %>
-			</div>
-		</div>
+		<%= partial "blog_paginate", locals: { paginate: paginate, prev_page: prev_page, num_pages: num_pages, page_number: page_number, next_page: next_page } %>
 	</div>
 </div>
 
