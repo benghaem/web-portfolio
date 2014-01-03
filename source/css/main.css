@@ -771,6 +771,20 @@ pre{
 	padding-right: 20px;
 	float: left;
 }
+
+.projectText a{
+	display: inline-block;
+	text-align: left;
+	background: #FFBE69;
+	padding: 5px;
+	color: #fff;
+	margin-bottom: 7px;
+}
+
+.projectText a:hover{
+	 background: #FFB14B;
+}
+
 .projectInfo{
 	width: 270px;
 	float: left;
