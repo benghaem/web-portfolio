@@ -3,7 +3,6 @@ pageable: true
 per_page: 8
 colorClass: CCmutedGreen
 ---
-
 <% c = case page_type
         when 'day' 
             Date.new(year, month, day).strftime('%b %e %Y')
@@ -12,7 +11,7 @@ colorClass: CCmutedGreen
         when 'year'
             Date.new(year).strftime('%Y')
         end %>
-<%content_for(:title, "Archive: " + c)%>
+<% content_for(:title, "Archive: " + c) %>
 <div class="mainContain">
     <%= partial "blog_sidebar" %>
   <div class="blogMain">

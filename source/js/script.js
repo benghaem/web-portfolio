@@ -1,3 +1,6 @@
+//Benjamin Ghaemmaghami 2014
+
+//overlay global vars
 var naviActive = 0
 var promptActive = 0 
 var modalActive = 0
