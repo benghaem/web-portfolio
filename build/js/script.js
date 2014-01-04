@@ -1,3 +1,6 @@
+//Benjamin Ghaemmaghami 2014
+
+//overlay global vars
 var naviActive = 0
 var promptActive = 0 
 var modalActive = 0
@@ -129,7 +132,7 @@ function resizeModalImage(maxwidth,maxheight){
 //resize image based on two max values -- should be rewritted so that it can be run on any image not just image modals
 	var imageWidth= $(".modalTrueImage").width();
 	var imageHeight= $(".modalTrueImage").height();
-	console.log(imageWidth,imageHeight,maxwidth,maxheight)
+	// console.log(imageWidth,imageHeight,maxwidth,maxheight)
 	//if dimension is too large-->reset to largest possible size while prioritizing width
 	if (imageWidth >= imageHeight){
 		$(".modalTrueImage").css('width', maxwidth+"px");

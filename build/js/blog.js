@@ -1,3 +1,5 @@
+//Benjamin Ghaemmaghami 2014
+
 $( document ).ready(function() {
 //hide calendar elements
 	$('.blogArchivePanelHidden').hide()

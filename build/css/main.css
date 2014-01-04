@@ -1,6 +1,6 @@
 /*
 main.css
-Benjamin Ghaemmaghami 2013
+Benjamin Ghaemmaghami 2014
 */
 
 /*General Rules*/
@@ -676,6 +676,14 @@ pre{
 	line-height: 1.3em;
 }
 
+.blogArticleText img{
+	width: 90%;
+	height: auto;
+	outline: solid #aaa 5px;
+	margin: 0 5% 0 5%;
+	padding: 0 0 0 0;
+}
+
 .blogPreview{
 	margin-top: 15px;
 	font-size: 1.1em;
@@ -683,6 +691,13 @@ pre{
 	margin-bottom: 10px;
 }
 
+.blogPreview img{
+	width: 90%;
+	height: auto;
+	outline: solid #aaa 5px;
+	margin: 0 5% 0 5%;
+	padding: 0 0 0 0;
+}
 
 .blogArticleTags{
 	text-align: left;
@@ -757,10 +772,26 @@ pre{
 	padding-right: 20px;
 	float: left;
 }
+
+/*.projectText a{
+	display: inline-block;
+	text-align: left;
+	background: #4D4D4D;
+	padding: 5px;
+	color: #fff;
+	margin-bottom: 7px;
+}
+
+.projectText a:hover{
+	 background: #ffffff;
+	 color: #4D4D4D;
+}*/
+
 .projectInfo{
 	width: 270px;
 	float: left;
 	margin-left: 10px;
+	margin-top: 50px;
 }
 .projectPageButton{
 	width: 200px;
@@ -1443,6 +1474,7 @@ pre{
 	}
 	.projectShowcase{
 		width: 768px;
+		padding-top: 0px;
 	}
 	.showcaseItem{
 		margin: 20px 40.5px 0 40.5px;

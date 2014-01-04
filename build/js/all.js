@@ -1,3 +1,5 @@
+//Benjamin Ghaemmaghami 2014
+
 $( document ).ready(function() {
 //hide calendar elements
 	$('.blogArchivePanelHidden').hide()
@@ -61,6 +63,9 @@ Prism.languages.javascript=Prism.languages.extend("clike",{keyword:/\b(var|let|i
 ;
 Prism.hooks.add("after-highlight",function(e){var t=e.element.parentNode;if(!t||!/pre/i.test(t.nodeName)||t.className.indexOf("line-numbers")===-1){return}var n=1+e.code.split("\n").length;var r;lines=new Array(n);lines=lines.join("<span></span>");r=document.createElement("span");r.className="line-numbers-rows";r.innerHTML=lines;if(t.hasAttribute("data-start")){t.style.counterReset="linenumber "+(parseInt(t.getAttribute("data-start"),10)-1)}e.element.appendChild(r)})
 ;
+//Benjamin Ghaemmaghami 2014
+
+//overlay global vars
 var naviActive = 0
 var promptActive = 0 
 var modalActive = 0
@@ -192,7 +197,7 @@ function resizeModalImage(maxwidth,maxheight){
 //resize image based on two max values -- should be rewritted so that it can be run on any image not just image modals
 	var imageWidth= $(".modalTrueImage").width();
 	var imageHeight= $(".modalTrueImage").height();
-	console.log(imageWidth,imageHeight,maxwidth,maxheight)
+	// console.log(imageWidth,imageHeight,maxwidth,maxheight)
 	//if dimension is too large-->reset to largest possible size while prioritizing width
 	if (imageWidth >= imageHeight){
 		$(".modalTrueImage").css('width', maxwidth+"px");
