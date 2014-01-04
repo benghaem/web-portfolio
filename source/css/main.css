@@ -295,8 +295,8 @@ pre{
 
 .showcaseItem:hover img{
 	border: 3px solid #4d4d4d;
-
 }
+
 .showcaseImage{
 	width: 175px;
 	height: 175px;
@@ -768,6 +768,8 @@ pre{
 .projectText{
 	width: 780px;
 	padding-right: 20px;
+	font-size: 1.1em;
+	line-height: 1.3em;
 	float: left;
 }
 
@@ -785,27 +787,61 @@ pre{
 	 color: #fff;
 }
 
-.projectInfo{
-	width: 270px;
+.projectHeader{
+	width: 100%;
 	float: left;
-	margin-left: 10px;
-	margin-top: 50px;
+	border-bottom: 2px solid #4D4D4D;
+	position: static;
+	height: 85px;
+}
+
+.projectTitle{
+	margin-top: .5em;
+	float: left;
+	clear: right;
+}
+
+.projectInfo{
+	float: left;
+	clear: left;
 }
 
 .projectPageButton{
 	width: 200px;
 	height: 65px;
-	margin: 15px auto 0 auto ;
 	line-height: 65px;
 	color: #fff;
 	background: #FFBE69;
 	display: block;
 	text-align: center;
-	font-size: 1.2em
+	font-size: 1.2em;
+	float: right;
+	margin-top: .5em;
 }
 
 .projectPageButton:hover{
 	background: #FFB14B;
+}
+
+.projectSidebar{
+	width: 270px;
+	float: left;
+	height: 500px;
+	margin-top: 1.2em;
+	position: relative;
+}
+
+.projectSidebar img{
+	width: 175px;
+	margin: 0 0 10px 44px;
+	position: relative;
+	border: 3px solid #ddd;
+	display: block;
+}
+
+.projectSidebar img:hover{
+	border: 3px solid #4d4d4d;
+	cursor: pointer;
 }
 
 /*Modal Rules*/
@@ -878,13 +914,15 @@ pre{
 
 .modalImage h1{
 	margin: 0 0 0 0;
-	padding: 0px 2px 2px 2px;
+	padding: 0px 2px 0px 2px;
 	color: white;
 	font-weight: 400;
 	font-size: 1.5em;
 }
+
 .modalImage img{
-	border-bottom: 2px solid #8F8F8F;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
 }
 
 /*Footer*/
@@ -1491,12 +1529,11 @@ pre{
 		width: 80%;
 		margin: 0 10% 0 10%;
 	}
-	.projectInfo{
+	.projectHeader{
 		width: 80%;
-		margin: 0 10% 0 10%;
-		border-top: 2px solid #4D4D4D;
-		padding-top: 20px;
+		margin: 0 10% 15px 10%;
 	}
+
 	.cvSegment{
 		width: 90%;
 		margin: 0 5% 0 5%;
@@ -1575,7 +1612,6 @@ pre{
 		left: 0px;
 		top: 150px;
 		padding: 30px 0px 30px 0px;
-
 	}
 
 	.showcaseSlider{
@@ -1596,7 +1632,6 @@ pre{
 		width: 225px;
 		height: auto;
 		overflow: hidden;
-
 	}
 
 	.footerLong{
@@ -1610,6 +1645,7 @@ pre{
 		position: relative;
 		padding: 0 0 0 0;
 	}
+
 	.showcaseItem{
 		margin: 0 0 10px 0;
 		position: relative;
