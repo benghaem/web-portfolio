@@ -97,7 +97,6 @@ input:focus,textarea:focus{
 }
 
 article{
-		
 }
 
 pre{
@@ -775,21 +774,24 @@ pre{
 .projectText a{
 	display: inline-block;
 	text-align: left;
-	background: #FFBE69;
+	background: #4D4D4D;
 	padding: 5px;
 	color: #fff;
 	margin-bottom: 7px;
-}
+} 
 
 .projectText a:hover{
-	 background: #FFB14B;
+	 background: #636363;
+	 color: #fff;
 }
 
 .projectInfo{
 	width: 270px;
 	float: left;
 	margin-left: 10px;
+	margin-top: 50px;
 }
+
 .projectPageButton{
 	width: 200px;
 	height: 65px;
@@ -801,7 +803,6 @@ pre{
 	text-align: center;
 	font-size: 1.2em
 }
-
 
 .projectPageButton:hover{
 	background: #FFB14B;
@@ -906,8 +907,6 @@ pre{
 	padding: 0 0 0 0;
 	margin: 0 0 20px 0;
 	clear:both;
-
-
 }
 
 .footer img:hover{
@@ -939,7 +938,6 @@ pre{
 	position: relative;
 }
 
-
 .footerButton{
 	width: 225px;
 	height: 75px;
@@ -969,8 +967,6 @@ pre{
 	height: 210px;
 }
 
-
-
 /*Deprecated Navigation Slider*/
 .naviContain{
 	margin: auto;
@@ -993,7 +989,6 @@ pre{
 	position: relative;
 	z-index: 0;
 	padding-top: 25px;
-
 }
 
 .thinCenter ul{
@@ -1212,7 +1207,6 @@ pre{
 	padding: 0 0 0 0;
 }
 
-
 .cvSegmentTitle{
 	padding-top: 10px;
 	padding-left: 20px;
@@ -1242,8 +1236,6 @@ pre{
 	border-bottom: 2px solid #ccc;
 	padding-bottom: 15px;
 }
-
-
 
 .cvSegmentContent ul li:first-child{
 	margin: 0 0 0 0;
