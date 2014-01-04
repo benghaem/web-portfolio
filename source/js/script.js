@@ -128,20 +128,26 @@ $('.modalBlackout').fadeIn(300)
 $('.effectContain').toggleClass('pageEffect')
 }
 
-function resizeModalImage(maxwidth,maxheight){
+function resizeModalImage(maxWidth,maxHeight){
 //resize image based on two max values -- should be rewritted so that it can be run on any image not just image modals
 	var imageWidth= $(".modalTrueImage").width();
 	var imageHeight= $(".modalTrueImage").height();
-	// console.log(imageWidth,imageHeight,maxwidth,maxheight)
+	// console.log(imageWidth,imageHeight,maxWidth,maxHeight)
 	//if dimension is too large-->reset to largest possible size while prioritizing width
-	if (imageWidth >= imageHeight){
-		$(".modalTrueImage").css('width', maxwidth+"px");
-		$(".modalTrueImage").css('height', 'auto');
-
+	if (imageWidth <= maxWidth && imageHeight <= maxHeight){
+		return
 	}
-	else{
+	if (imageWidth >= imageHeight){
+		$(".modalTrueImage").css('width', maxWidth+"px");
+		$(".modalTrueImage").css('height', 'auto');
+	}
+	if (imageWidth === imageHeight){
 		$(".modalTrueImage").css('width', 'auto');
-		$(".modalTrueImage").css('height', maxheight+"px");	
+		$(".modalTrueImage").css('height', maxHeight+"px");	
+	}
+	if (imageWidth <= imageHeight){
+		$(".modalTrueImage").css('width', 'auto');
+		$(".modalTrueImage").css('height', maxHeight+"px");	
 	}
 }
 function closeModal(){
