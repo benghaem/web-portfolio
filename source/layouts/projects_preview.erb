@@ -17,7 +17,7 @@
 		<div class="projectSidebar">
 			<% if Dir.exists?("source"+current_page.url+"/img") == true %>
 				<% Dir.foreach("source"+current_page.url+"/img") do |imgEach| next if imgEach == '.' or imgEach == '..' %>
-					<%="<img src='img/#{imgEach}' onclick=createModal('','#{imgEach}','CCmutedOrange','image','img/#{imgEach}')></img>"%>
+					<%="<img src='img/#{imgEach}' onclick=createModal('','#{imgEach}','','image','img/#{imgEach}')></img>"%>
 				<% end %>
 			<% end %>
 		</div> 

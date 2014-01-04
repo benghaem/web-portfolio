@@ -54,10 +54,17 @@ naviToggleCacheVal = $('.naviToggle');
   		createModal("contact","Feel free to contact me with work or questions at: <a href='mailto:contact@benghaem.com'>contact@benghaem.com</a>",getPageColor(),"text")
   	})
 
+  	//easter egg remove css window if red button is clicked
   	$(".cssWindowDot:nth-child(1)").click(function(){
   		$(this).parent().fadeTo(400,0.00)
   	})
-  	
+
+  	//close modal when escape key is pressed
+  	$(document).keydown(function(event) {
+  		if (event.which === 27){
+  			closeModal();
+  		}
+  	})  	
 })
 
 //this is nessasary to ensure that modals stay centered while the window is resized. Unfortunately CPU intensive. Possiblly offer toggle for slower computers?
@@ -152,12 +159,14 @@ function resizeModalImage(maxWidth,maxHeight){
 }
 function closeModal(){
 	//when called fade out both the helper element and the blackout element then remove all elements within the helper
+	if (modalActive === 1){
 	$('.effectContain').toggleClass('pageEffect')
 	$('.modalHelper').fadeOut()
 	$('.modalBlackout').fadeToggle(300, function(){
 		$('.modal').remove()
-		modalActive = 0
-	})
+	});
+	modalActive = 0
+	}
 }
 
 function showcaseSlideTo(location){
