@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	
 	<!-- Use title if it's in the page YAML frontmatter -->
-	<title> Photography Portfolio - Ben Ghaem</title>
+	<title> Single Page Portfolio - Ben Ghaem</title>
 	<!-- Load CDN JQuery -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- Load Favicon -->
@@ -29,7 +29,7 @@
 	    		}
 		});
 	</script>
-	<body class="projects projects_photoport projects_photoport_index">
+	<body class="projects projects_singlepageport projects_singlepageport_index">
 		<div class="modalBlackout"><span>close</span></div>
 		<div class="modalHelper"></div>
 		<div class="effectContain">
@@ -47,26 +47,29 @@
 					<div class="mainContain">
 		<div class="projectHeader">
 				<div class="projectTitle">
-					<h2>Photography Portfolio and Gallery</h2>
+					<h2>Single Page Portfolio Design</h2>
 				</div>
 				
 					<a href="raw/"><div class="projectPageButton">Live Project</div></a>
 				
 				<div class="projectInfo">
-					<h3>Date: Summer 2012 | Type: HTML, Javascript, CSS, PHP</h3>
+					<h3>Date: Summer 2012 | Type: HTML, CSS, Javascript</h3>
 				</div>
 		</div>
 		<div class="projectText">
-			<p>This portfolio was initially created for one of my close friends. It features a PHP based gallery that gathers images from a gallery subdirectory and generates thumbnails. The main page loads the subpages via AJAX and functions as a similar page using the "#" after the url to determine the correct page to load and ensuring that back-button functionality is not broken</p>
+			<p>This single page portfolio design has one defining feature: the navigation. I designed a fixed position navigation element that follows the user throughout the page and also displays their current position. The idea was to give the user a fun way to navigate the single page while making navigation mirror other common sites. Initially, the navigation uses only pictorial representations of the given anchors, but if the user hovers, the element expands and displays the word. </p>
 
-<p>Overall, I was happy with the final result of the project. It remains slightly unfinished–without a contact page–but otherwise is fully functional and with the addition of content could work for a photographer who is only interested in gallery functionality in a portfolio</p>
+<p>After finishing the navigation, I had little else to work on. The remainder of the page styling was inconsistent, and while I attempted to make use of CSS3 properties, I may have gone slightly overboard with the use of border radius. All in all, the project was fun for the navigation and the other aspects of the site received significantly less attention. </p>
 
-<p>Another fun aspect of the project was the concentrated amount of time I worked on it. Over the course of about two days, I translated the initial sketches of design and idea into a working page. Sprint-style projects like this teach me about how I work under-pressure and how the style and accuracy of my code changes as I work later and later into the night.</p>
+<p>I learned that I need to have a design goal in mind before I begin a project. This project failed because I had an idea for a navigation element and did not know how to build a site around that interaction. It was fun for the user, but the rest of the site was bland and boring. </p>
 
 		</div>
 		<div class="projectSidebar">
 			
 			
+				
+					
+					<img src='img/singlepageport.png' onclick=albumModal.createTag('projectPreview','1') data-album='projectPreview'></img>
 				
 			
 		</div> 

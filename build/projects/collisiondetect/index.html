@@ -10,7 +10,7 @@
 	<!-- Use title if it's in the page YAML frontmatter -->
 	<title> Collision Detection - Ben Ghaem</title>
 	<!-- Load CDN JQuery -->
-	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- Load Favicon -->
 	<link rel="icon" type="image/png" href="http://benghaem.com/imgs/favicon.png">
 	<!-- Load Google Webfonts -->
@@ -45,18 +45,25 @@
 				</div>
 			</div>
 					<div class="mainContain">
-			<div class="projectText">
-				<h2>Javascript Collision Detection</h2>
-				<p>
-The idea to create a collision detection example in HTML5's &lt;canvas&gt; element began in the summer of 2012 when I was asked if I could make a billiards simulation/game. I quickly moved away from that idea through development and decided that instead I simply wanted to see how many particles I could collide at a reasonable (30+) framerate on semi-recent hardware. The final product works very well with particle counts up to 1000 after which the space is filled too densely for the particles to bounce accurately.
-</p>
-<p>
-The main logic that powers the collisions is as follows:
-</p>
+		<div class="projectHeader">
+				<div class="projectTitle">
+					<h2>Javascript Collision Detection</h2>
+				</div>
+				
+					<a href="raw/"><div class="projectPageButton">Live Project</div></a>
+				
+				<div class="projectInfo">
+					<h3>Date: Summer 2012 | Type: HTML, Javascript</h3>
+				</div>
+		</div>
+		<div class="projectText">
+			<p>The idea to create a collision detection example in HTML5's &lt;canvas&gt; element began in the summer of 2012 when I was asked if I could make a billiards simulation/game. I quickly moved away from that idea through development and decided that instead I simply wanted to see how many particles I could collide at a reasonable (30+) framerate on semi-recent hardware. The final product works very well with particle counts up to 1000 after which the space is filled too densely for the particles to bounce accurately.</p>
+
+<p>The main logic that powers the collisions is as follows:</p>
 
 <pre>
 <code class="language-javascript">function chkInside(xpos1, ypos1, xpos2, ypos2, w2, h2){
-		if(((xpos1 >= xpos2) &amp;&amp; (xpos1 &lt;= xpos2+w2)) &amp;&amp; ((ypos1 >= ypos2) && (ypos1 <= ypos2+h2))){
+		if(((xpos1 &gt;= xpos2) &amp;&amp; (xpos1 &lt;= xpos2+w2)) &amp;&amp; ((ypos1 &gt;= ypos2) &amp;&amp; (ypos1 &lt;= ypos2+h2))){
 			return true;
 		}
 		else{
@@ -64,21 +71,22 @@ The main logic that powers the collisions is as follows:
 		}</code>
 </pre>
 
-
-<br>
-<p>
-While this logic is effective for checking if a rectangle is within another rectangle, it is far too simplistic and cannot be effectively moved to other non-rectangular shapes, or rectangles that have been rotated in some manner. Because of this, all elements in the scene must have either horizontal or vertical edges.
-</p>
+<p>While this logic is effective for checking if a rectangle is within another rectangle, it is far too simplistic and cannot be effectively moved to other non-rectangular shapes, or rectangles that have been rotated in some manner. Because of this, all elements in the scene must have either horizontal or vertical edges.</p>
 
 
-			</div>
-		<div class="projectInfo">
-			<h3>Date: Summer 2012</h3>
-			<h3>Type: HTML, Javascript, CSS</h3>
-			
-				<a href="raw/"><div class="projectPageButton">Live Project</div></a>
-			
 		</div>
+		<div class="projectSidebar">
+			
+			
+				
+					
+					<img src='img/jscollide.png' onclick=albumModal.createTag('projectPreview','1') data-album='projectPreview'></img>
+				
+					
+					<img src='img/oneBack.png' onclick=albumModal.createTag('projectPreview','2') data-album='projectPreview'></img>
+				
+			
+		</div> 
   	</div>
 
 			<div class="footer">

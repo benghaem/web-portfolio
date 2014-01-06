@@ -98,11 +98,12 @@ input:focus,textarea:focus{
 }
 
 article{
-		
 }
 
 pre{
 	word-wrap: break-all;
+	font-size: .9em;
+	padding: none;
 }
 
 .error404{
@@ -297,8 +298,8 @@ pre{
 
 .showcaseItem:hover img{
 	border: 3px solid #4d4d4d;
-
 }
+
 .showcaseImage{
 	width: 175px;
 	height: 175px;
@@ -770,44 +771,80 @@ pre{
 .projectText{
 	width: 780px;
 	padding-right: 20px;
+	font-size: 1.1em;
+	line-height: 1.3em;
 	float: left;
 }
 
-/*.projectText a{
+.projectText a{
 	display: inline-block;
 	text-align: left;
 	background: #4D4D4D;
 	padding: 5px;
 	color: #fff;
 	margin-bottom: 7px;
-}
+} 
 
 .projectText a:hover{
-	 background: #ffffff;
-	 color: #4D4D4D;
-}*/
+	 background: #636363;
+	 color: #fff;
+}
+
+.projectHeader{
+	width: 100%;
+	float: left;
+	border-bottom: 2px solid #4D4D4D;
+	position: static;
+	height: 85px;
+}
+
+.projectTitle{
+	margin-top: .5em;
+	float: left;
+	clear: right;
+}
 
 .projectInfo{
-	width: 270px;
 	float: left;
-	margin-left: 10px;
-	margin-top: 50px;
+	clear: left;
 }
+
 .projectPageButton{
 	width: 200px;
 	height: 65px;
-	margin: 15px auto 0 auto ;
 	line-height: 65px;
 	color: #fff;
 	background: #FFBE69;
 	display: block;
 	text-align: center;
-	font-size: 1.2em
+	font-size: 1.2em;
+	float: right;
+	margin-top: .5em;
 }
-
 
 .projectPageButton:hover{
 	background: #FFB14B;
+}
+
+.projectSidebar{
+	width: 270px;
+	float: left;
+	height: auto;
+	margin-top: 1.2em;
+	position: relative;
+}
+
+.projectSidebar img{
+	width: 175px;
+	margin: 0 0 10px 44px;
+	position: relative;
+	border: 3px solid #ddd;
+	display: block;
+}
+
+.projectSidebar img:hover{
+	border: 3px solid #4d4d4d;
+	cursor: pointer;
 }
 
 /*Modal Rules*/
@@ -842,16 +879,15 @@ pre{
 }
 
 .modal{
-	background-color: #F5F5F5;
 	z-index: 102;
 	position: fixed;
 	opacity: 2;
 	display: block;
 	pointer-events:all;
-
 }
 
 .modalText{
+	background-color: #F5F5F5;
 	width: 350px;
 	height: 150px;
 }
@@ -875,18 +911,37 @@ pre{
 }
 
 .modalImage{
-	background: #4D4D4D;
 }
 
 .modalImage h1{
 	margin: 0 0 0 0;
-	padding: 0px 2px 2px 2px;
+	padding: 0px 2px 0px 2px;
 	color: white;
 	font-weight: 400;
 	font-size: 1.5em;
 }
+
 .modalImage img{
-	border-bottom: 2px solid #8F8F8F;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	float: left;
+}
+
+.albumNav{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	float: left;
+	text-align:  center;
+	font-size: 2em;
+	cursor: pointer;
+	color: #BDBDBD;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /*Footer*/
@@ -909,8 +964,6 @@ pre{
 	padding: 0 0 0 0;
 	margin: 0 0 20px 0;
 	clear:both;
-
-
 }
 
 .footer img:hover{
@@ -942,7 +995,6 @@ pre{
 	position: relative;
 }
 
-
 .footerButton{
 	width: 225px;
 	height: 75px;
@@ -972,8 +1024,6 @@ pre{
 	height: 210px;
 }
 
-
-
 /*Deprecated Navigation Slider*/
 .naviContain{
 	margin: auto;
@@ -996,7 +1046,6 @@ pre{
 	position: relative;
 	z-index: 0;
 	padding-top: 25px;
-
 }
 
 .thinCenter ul{
@@ -1215,7 +1264,6 @@ pre{
 	padding: 0 0 0 0;
 }
 
-
 .cvSegmentTitle{
 	padding-top: 10px;
 	padding-left: 20px;
@@ -1246,8 +1294,6 @@ pre{
 	padding-bottom: 15px;
 }
 
-
-
 .cvSegmentContent ul li:first-child{
 	margin: 0 0 0 0;
 }
@@ -1260,9 +1306,6 @@ pre{
 .cvSegmentContent ul li h2{
 	color: #303030;
 }
-
-
-
 
 /*General Colors*/
 
@@ -1316,8 +1359,7 @@ pre{
 /*	transform: scale(.95,.95);
 	-ms-transform: scale(.95,.95);
 	-webkit-transform: scale(.95,.95);
-	transition-duration: 600ms;*/
-
+*/
 }
 
 /*Transform Rotation Classes*/
@@ -1449,7 +1491,8 @@ pre{
 		margin-left: auto;
 		margin-right:auto;
 		position: relative;
-			}
+	}
+
 	.showcasePageHold{
 		width: 500%;
 	}
@@ -1502,12 +1545,20 @@ pre{
 		width: 80%;
 		margin: 0 10% 0 10%;
 	}
-	.projectInfo{
+	.projectHeader{
 		width: 80%;
-		margin: 0 10% 0 10%;
-		border-top: 2px solid #4D4D4D;
-		padding-top: 20px;
+		margin: 0 10% 15px 10%;
 	}
+
+	.projectSidebar{
+		width: 80%;
+		margin: 20px 10% 0 10%;
+	}
+
+	.projectSidebar img{
+		float: left;
+	}
+
 	.cvSegment{
 		width: 90%;
 		margin: 0 5% 0 5%;
@@ -1586,7 +1637,6 @@ pre{
 		left: 0px;
 		top: 150px;
 		padding: 30px 0px 30px 0px;
-
 	}
 
 	.showcaseSlider{
@@ -1607,7 +1657,6 @@ pre{
 		width: 225px;
 		height: auto;
 		overflow: hidden;
-
 	}
 
 	.footerLong{
@@ -1621,6 +1670,7 @@ pre{
 		position: relative;
 		padding: 0 0 0 0;
 	}
+
 	.showcaseItem{
 		margin: 0 0 10px 0;
 		position: relative;
@@ -1644,11 +1694,21 @@ pre{
 		margin-left: 110px;
 		padding-top: 2px;
 	}
+
 	.cvSegmentContentul{
 		margin-left: 0px;
 	}
+
 	.cvSegmentTitle{
 		text-align: center;
+	}
+
+	.modalImage img{
+		float: right;
+	}
+
+	.albumNav{
+		clear: left;
 	}
 }
 
