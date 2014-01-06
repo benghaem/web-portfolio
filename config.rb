@@ -98,11 +98,11 @@ activate :livereload
 #   end
 # end
 
-set :css_dir, 'css'
+set :css_dir, 'assets/css'
 
-set :js_dir, 'js'
+set :js_dir, 'assets/js'
 
-set :images_dir, 'imgs'
+set :images_dir, 'assets/imgs'
 
 activate :blog do |blog|
     blog.prefix = "blog"
