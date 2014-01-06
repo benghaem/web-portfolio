@@ -147,12 +147,9 @@ var albumModal = function(){
 	var arraySize = null;
 	var currentAlbum = null;
 	var currentImage = null;
-	var firstRun = true
 
 	//searches entire page for img elements with matching tag
 	function createFromTag(albumName,startImg){
-		pageStatus.modalActive = 1
-		pageStatus.albumActive = true
 		currentAlbum = albumName;
 		currentImage = parseInt(startImg);
 		$( "img" ).each(function(index,el) {
@@ -206,11 +203,9 @@ var albumModal = function(){
 			resizeModalImage($(window).width() * .8, $(window).height() * .7) //.8 and .7 are the maximum % width and % height
 			centerModal()
 		})
-		if (firstRun === true){
-			openModal()
-			firstRun = false;
-		}
-
+		openModal()
+		pageStatus.modalActive = 1
+		pageStatus.albumActive = true
 	}
 
 	//return elements match external functions to internal
@@ -247,9 +242,11 @@ function resizeModalImage(maxWidth,maxHeight){
 }
 function openModal(){
 	//the helper holds the modal items and the blackout causes the screen to be obscured
-	$('.modalHelper').fadeIn(300)
-	$('.modalBlackout').fadeIn(300)
-	$('.effectContain').toggleClass('pageEffect')
+	if (pageStatus.modalActive != 1){
+		$('.modalHelper').fadeIn(300)
+		$('.modalBlackout').fadeIn(300)
+		$('.effectContain').toggleClass('pageEffect')
+	}
 }
 
 function closeModal(){
