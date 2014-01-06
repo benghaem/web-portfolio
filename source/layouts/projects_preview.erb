@@ -16,8 +16,10 @@
 		</div>
 		<div class="projectSidebar">
 			<% if Dir.exists?("source"+current_page.url+"/img") == true %>
+			<% i = 0 %>
 				<% Dir.foreach("source"+current_page.url+"/img") do |imgEach| next if imgEach == '.' or imgEach == '..' %>
-					<%="<img src='img/#{imgEach}' onclick=createModal('','#{imgEach}','','image','img/#{imgEach}')></img>"%>
+					<% i += 1 %>
+					<%="<img src='img/#{imgEach}' onclick=albumModal.createTag('projectPreview','#{i}') data-album='projectPreview'></img>"%>
 				<% end %>
 			<% end %>
 		</div> 
