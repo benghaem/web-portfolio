@@ -826,7 +826,7 @@ pre{
 .projectSidebar{
 	width: 270px;
 	float: left;
-	height: 500px;
+	height: auto;
 	margin-top: 1.2em;
 	position: relative;
 }
@@ -876,16 +876,15 @@ pre{
 }
 
 .modal{
-	background-color: #F5F5F5;
 	z-index: 102;
 	position: fixed;
 	opacity: 2;
 	display: block;
 	pointer-events:all;
-
 }
 
 .modalText{
+	background-color: #F5F5F5;
 	width: 350px;
 	height: 150px;
 }
@@ -909,7 +908,6 @@ pre{
 }
 
 .modalImage{
-	background: #4D4D4D;
 }
 
 .modalImage h1{
@@ -923,6 +921,24 @@ pre{
 .modalImage img{
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
+	float: left;
+}
+
+.albumNav{
+	width: 50px;
+	height: 50px;
+	position: relative;
+	float: left;
+	text-align:  center;
+	font-size: 2em;
+	cursor: pointer;
+	color: #BDBDBD;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 /*Footer*/
@@ -1288,9 +1304,6 @@ pre{
 	color: #303030;
 }
 
-
-
-
 /*General Colors*/
 
 .CCblack{
@@ -1475,7 +1488,8 @@ pre{
 		margin-left: auto;
 		margin-right:auto;
 		position: relative;
-			}
+	}
+
 	.showcasePageHold{
 		width: 500%;
 	}
@@ -1668,11 +1682,21 @@ pre{
 		margin-left: 110px;
 		padding-top: 2px;
 	}
+
 	.cvSegmentContentul{
 		margin-left: 0px;
 	}
+
 	.cvSegmentTitle{
 		text-align: center;
+	}
+
+	.modalImage img{
+		float: right;
+	}
+
+	.albumNav{
+		clear: left;
 	}
 }
 
