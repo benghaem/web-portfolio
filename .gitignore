@@ -5,10 +5,14 @@ build/projects/dynamictimeline/raw/
 build/projects/linedraw/raw/
 build/projects/photoport/raw/
 build/projects/bioresearch/raw/
+build/projects/singlepageport/raw/
+build/projects/datatimeline/raw/
 config.rb~
 source/projects/collisiondetect/raw/
 source/projects/dynamictimeline/raw/
 source/projects/linedraw/raw/
 source/projects/photoport/raw/
 source/projects/bioresearch/raw/
+source/projects/singlepageport/raw/
+source/projects/datatimeline/raw/
 web-portfolio.sublime-workspace
