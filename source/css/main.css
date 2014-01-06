@@ -1547,6 +1547,15 @@ pre{
 		margin: 0 10% 15px 10%;
 	}
 
+	.projectSidebar{
+		width: 80%;
+		margin: 20px 10% 0 10%;
+	}
+
+	.projectSidebar img{
+		float: left;
+	}
+
 	.cvSegment{
 		width: 90%;
 		margin: 0 5% 0 5%;
