@@ -5,7 +5,7 @@ $( document ).ready(function() {
 	$('.blogArchivePanelHidden').hide()
 
 	//extend blogsidebar to page height
-	$('.blogSidebarReserve').css('height',$('.mainContain').height());
+	$('.blogSidebarReserve').css('height',$('.mainContain').height()-30/*Get height without margins*/);
 
   	//toggle the month calendar elements on the blog pages
   	$('.blogArchiveToggle').click(function(){

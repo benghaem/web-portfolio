@@ -1,15 +1,17 @@
 <% wrap_layout :layout do %>
 	<div class="mainContain">
 		<div class="projectHeader">
-				<div class="projectTitle">
-					<h2><%=current_page.data.fullTitle%></h2>
+				<div class="projectSubhead">
+					<div class="projectTitle">
+							<h2><%=current_page.data.fullTitle%></h2>
+					</div>
+					<div class="projectInfo">
+						<h3>Date: <%=current_page.data.date%> | Type: <%=current_page.data.type%></h3>
+					</div>
 				</div>
 				<% if current_page.data.liveProject != false %>
 					<a href="raw/"><div class="projectPageButton">Live Project</div></a>
 				<% end %>
-				<div class="projectInfo">
-					<h3>Date: <%=current_page.data.date%> | Type: <%=current_page.data.type%></h3>
-				</div>
 		</div>
 		<div class="projectText">
 			<%= yield %>
@@ -17,7 +19,7 @@
 		<div class="projectSidebar">
 			<% if Dir.exists?("source"+current_page.url+"/img") == true %>
 			<% i = 0 %>
-				<% Dir.foreach("source"+current_page.url+"/img") do |imgEach| next if imgEach == '.' or imgEach == '..' %>
+				<% Dir.foreach("source"+current_page.url+"/img") do |imgEach| next if imgEach == '.' or imgEach == '..' or imgEach == '.DS_Store' %>
 					<% i += 1 %>
 					<%="<img src='img/#{imgEach}' onclick=albumModal.createTag('projectPreview','#{i}') data-album='projectPreview'></img>"%>
 				<% end %>
