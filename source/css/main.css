@@ -101,6 +101,8 @@ article{
 
 pre{
 	word-wrap: break-all;
+	font-size: .9em;
+	padding: none;
 }
 
 .error404{
