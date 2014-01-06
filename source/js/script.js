@@ -17,6 +17,7 @@ styleVars.colorValues = ["#FF5E5E","#F3B6FA","#FFBE69","#61C758","#99E4F0"];
 
 
 $( document ).ready(function() {
+console.log("Welcome to benghaem.com")
 mainContainCacheVal = $('.mainContain');
 naviContainCacheVal = $('.naviContain');
 naviToggleCacheVal = $('.naviToggle');
@@ -111,9 +112,6 @@ function createModal(title, text, color, style, extra){
 //style-- text,image,prompt,custom
 //extra-- this attribute changes based on the style /extra-text: extra has no effect/ /extra-image: extra is the image url, title serves as the caption and text is the alt-text/ /extra-prompt: extra is an array of addtional values [button 1 identifier, button 2 identifier, button 1 text, button 2 text]/ /extra-custom: extra is the css class to be added to the modal/
 
-//note that a modal is active for any functions that may need that information
-	pageStatus.modalActive = 1
-
 	if (style == "text"){
 		$('.modalHelper').append('<div class="modal modalText '+color+'"><h1>'+title+'</h1><p>'+text+'</p></div>')
 		console.log('text modal created!')
@@ -204,7 +202,6 @@ var albumModal = function(){
 			centerModal()
 		})
 		openModal()
-		pageStatus.modalActive = 1
 		pageStatus.albumActive = true
 	}
 
@@ -243,9 +240,10 @@ function resizeModalImage(maxWidth,maxHeight){
 function openModal(){
 	//the helper holds the modal items and the blackout causes the screen to be obscured
 	if (pageStatus.modalActive != 1){
-		$('.modalHelper').fadeIn(300)
-		$('.modalBlackout').fadeIn(300)
-		$('.effectContain').toggleClass('pageEffect')
+		$('.modalHelper').fadeIn(300);
+		$('.modalBlackout').fadeIn(300);
+		$('.effectContain').toggleClass('pageEffect');
+		pageStatus.modalActive = 1;
 	}
 }
 
