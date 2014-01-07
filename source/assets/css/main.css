@@ -275,6 +275,10 @@ pre{
 	height: 100px;
 }
 
+.showcaseMobile{
+	display: none;
+}
+
 .showcaseItem{
 	height: auto;
 	width: 175px;
@@ -1657,45 +1661,15 @@ pre{
 	.showcaseActiveContain{
 		display: none;
 	}
-
-	.glamorShot{
-		background-position: -450px;
-		background-position-top: -50px;
-		height: 325px;
-		background: url(/assets/img/benfull_640.jpg);
+	
+	.showcaseMobile{
+		display: block;
 	}
 
-	.glamorText{
-		position: relative;
-		width: 100%;
-		left: 0px;
-		top: 150px;
-		padding: 30px 0px 30px 0px;
-	}
-
-	.showcaseSlider{
+	.showcaseDesktop{
 		display: none;
 	}
 
-	.footer{
-		height: auto;
-		width: 100%;
-	}
-
-	.footerButton{
-		float: none;
-		margin: 7px 0 15px 0;
-		position: relative;
-	}
-	.footerButtonHold{
-		width: 225px;
-		height: auto;
-		overflow: hidden;
-	}
-
-	.footerLong{
-		height: 350px;
-	}
 	.projectShowcase{
 		width: 360px;
 		margin-top: 0px;
@@ -1727,6 +1701,46 @@ pre{
 		width: 270px;
 		margin-left: 110px;
 		padding-top: 2px;
+	}
+
+	.glamorShot{
+		background-position: -450px;
+		background-position-top: -50px;
+		height: 325px;
+		background: url(/assets/img/benfull_640.jpg);
+	}
+
+	.glamorText{
+		position: relative;
+		width: 100%;
+		left: 0px;
+		top: 150px;
+		padding: 30px 0px 30px 0px;
+	}
+
+	.showcaseSlider{
+		display: none;
+	}
+
+	.footer{
+		height: auto;
+		width: 100%;
+		padding: 10px 0 20px 0;
+	}
+
+	.footerButton{
+		float: none;
+		margin: 7px 0 15px 0;
+		position: relative;
+	}
+	.footerButtonHold{
+		width: 225px;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.footer ul{
+		margin-top: 10px;
 	}
 
 	.cvSegmentContentul{
