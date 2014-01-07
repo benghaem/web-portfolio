@@ -14,12 +14,28 @@
 	<!-- Load CDN JQuery -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!-- Load Favicon -->
-	<link rel="icon" type="image/png" href="http://benghaem.com/imgs/favicon.png">
+	<link rel="icon" type="image/png" href="http://benghaem.com/favicon.png">
 	<!-- Load Google Webfonts -->
 	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
 	<!-- Load local scripts/styles -->
 	<%= stylesheet_link_tag "normalize", "main", "prism" %>
 	<%= javascript_include_tag  "prism", "script" %>
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.benghaem.com/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', 1]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+	    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+
+	</script>
+	<noscript><p><img src="http://analytics.benghaem.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
   	</head>
   	<script>
 		WebFont.load({
@@ -32,7 +48,7 @@
 		<div class="modalBlackout"><span>close</span></div>
 		<div class="modalHelper"></div>
 		<div class="effectContain">
-			<div class="naviToggle <%= current_page.data.colorClass%>">
+			<div class="naviToggle <%= current_page.data.colorClass %>">
 				<div class="naviMiddle">
 					<a href="http://www.benghaem.com">ben ghaem</a>
 					<ul>
