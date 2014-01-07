@@ -120,7 +120,7 @@ pre{
 
 /*Navigation Rules*/
 .dropIcon{
-	background: url(imgs/dropd.png);
+	background: url(/assets/img/dropd.png);
 	width: 50px;
 	height: 50px;
 	display: block;
@@ -183,7 +183,7 @@ pre{
 .mainContain{
 	width: 100%;
 	max-width: 1080px;
-	margin: 15px auto 0 auto;
+	margin: 15px auto 15px auto;
 	position: relative;
 	z-index: 10;
 	background: #F2F2F2;
@@ -206,7 +206,7 @@ pre{
 }
 
 .glamorShot{
-	background: url(/imgs/benfull.jpg) no-repeat center;
+	background: url(/assets/img/benfull.jpg) no-repeat center;
 	width: 100%;
 	max-width: 2838px;
 	height: 719px;
@@ -274,6 +274,10 @@ pre{
 	position: relative;
 	width: 100%;
 	height: 100px;
+}
+
+.showcaseMobile{
+	display: none;
 }
 
 .showcaseItem{
@@ -434,7 +438,7 @@ pre{
 .headShot{
 	width: 250px;
 	height: 250px;
-	background: url(/imgs/benhead.png);
+	background: url(/assets/img/benhead.png);
 	float: right;
 	border-bottom: 10px solid #FF5E5E;
 }
@@ -553,7 +557,7 @@ pre{
 	font-weight: 400;
 	font-size: 1.2em;
 	color: #4D4D4D;
-	background: url(/imgs/arrow.png);
+	background: url(/assets/img/arrow.png);
 	float: right;
 	clear: right;
 	padding-right: 5px;
@@ -568,7 +572,7 @@ pre{
 	font-weight: 400;
 	font-size: 1em;
 	color: #4D4D4D;
-	background: url(/imgs/arrowflip.png) no-repeat center top;
+	background: url(/assets/img/arrowflip.png) no-repeat center top;
 	float: right;
 	clear: none;
 }
@@ -790,12 +794,24 @@ pre{
 	 color: #fff;
 }
 
+.projectText p:first-child{
+	margin-top: 0;
+}
+
 .projectHeader{
 	width: 100%;
 	float: left;
 	border-bottom: 2px solid #4D4D4D;
-	position: static;
-	height: 85px;
+	position: relative;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.projectSubhead{
+	min-height: 65px;
+	float: left;
+	clear: none;
+	margin-bottom: 10px;
 }
 
 .projectTitle{
@@ -806,7 +822,7 @@ pre{
 
 .projectInfo{
 	float: left;
-	clear: left;
+	clear: both;
 }
 
 .projectPageButton{
@@ -819,7 +835,7 @@ pre{
 	text-align: center;
 	font-size: 1.2em;
 	float: right;
-	margin-top: .5em;
+	margin-bottom: 10px;
 }
 
 .projectPageButton:hover{
@@ -946,13 +962,12 @@ pre{
 
 /*Footer*/
 .footer{
-	height: 150px;
+	height: 140px;
 	background: #4d4d4d;
 	padding-top: 30px;
 	text-align: center;
 	overflow: hidden;
 	clear: both;
-	margin-top: 15px;
 	width: 100%;
 	z-index: 100;
 	bottom: 0px;
@@ -972,7 +987,7 @@ pre{
 .footer ul{
 	display: block;
 	width: 100%;
-	height: 50px;
+	height: 25px;
 	margin: auto;
 	position: relative;
 	padding: 0 0 0 0;
@@ -989,7 +1004,8 @@ pre{
 }
 
 .footerButtonHold{
-	width: 765px;
+/*	width: 765px;*/
+	width: 510px;
 	height: 75px;
 	margin: 0px auto 20px auto;
 	position: relative;
@@ -1438,17 +1454,17 @@ pre{
 /*Media Query Responsive Classes*/
 @media (max-width: 1920px){
 	.glamorShot{
-	background: url(/imgs/benfull_1920.jpg) no-repeat center;
+	background: url(/assets/img/benfull_1920.jpg) no-repeat center;
 	}
 }
 @media (max-width: 1650px) and (min-width : 1080px){
 	.glamorShot{
-	background: url(/imgs/benfull_1650.jpg) no-repeat center;
+	background: url(/assets/img/benfull_1650.jpg) no-repeat center;
 	}	
 }
 @media (max-width : 1080px){
 	.glamorShot{
-	background: url(/imgs/benfull_1080.jpg) no-repeat center;
+	background: url(/assets/img/benfull_1080.jpg) no-repeat center;
 	}
 
 	.showcase{
@@ -1596,6 +1612,27 @@ pre{
 	}
 }
 
+@media (max-width: 850px){
+	.projectSubhead{
+		text-align: center;
+		width: 100%;
+	}
+
+	.projectTitle{
+		width: 100%;
+	}
+
+	.projectInfo{
+		width: 100%;
+	}
+	.projectPageButton{
+		margin: 0 auto 10px auto;
+		position: relative;
+		float: none;
+		clear: both;
+	}	
+}
+
 @media (max-width: 768px){
 	.projectShowcase{
 		width: 640px;
@@ -1605,9 +1642,11 @@ pre{
 		position: relative;
 	}
 
-	.githubFooterButton{
+
+/*Removed until CV is added back*/
+/*	.githubFooterButton{
 		display: none;
-	}
+	}*/
 	.footerButtonHold{
 		width: 510px;
 	}
@@ -1623,45 +1662,15 @@ pre{
 	.showcaseActiveContain{
 		display: none;
 	}
-
-	.glamorShot{
-		background-position: -450px;
-		background-position-top: -50px;
-		height: 325px;
-		background: url(/imgs/benfull_640.jpg);
+	
+	.showcaseMobile{
+		display: block;
 	}
 
-	.glamorText{
-		position: relative;
-		width: 100%;
-		left: 0px;
-		top: 150px;
-		padding: 30px 0px 30px 0px;
-	}
-
-	.showcaseSlider{
+	.showcaseDesktop{
 		display: none;
 	}
 
-	.footer{
-		height: auto;
-		width: 100%;
-	}
-
-	.footerButton{
-		float: none;
-		margin: 7px 0 15px 0;
-		position: relative;
-	}
-	.footerButtonHold{
-		width: 225px;
-		height: auto;
-		overflow: hidden;
-	}
-
-	.footerLong{
-		height: 350px;
-	}
 	.projectShowcase{
 		width: 360px;
 		margin-top: 0px;
@@ -1693,6 +1702,46 @@ pre{
 		width: 270px;
 		margin-left: 110px;
 		padding-top: 2px;
+	}
+
+	.glamorShot{
+		background-position: -450px;
+		background-position-top: -50px;
+		height: 325px;
+		background: url(/assets/img/benfull_640.jpg);
+	}
+
+	.glamorText{
+		position: relative;
+		width: 100%;
+		left: 0px;
+		top: 150px;
+		padding: 30px 0px 30px 0px;
+	}
+
+	.showcaseSlider{
+		display: none;
+	}
+
+	.footer{
+		height: auto;
+		width: 100%;
+		padding: 10px 0 20px 0;
+	}
+
+	.footerButton{
+		float: none;
+		margin: 7px 0 15px 0;
+		position: relative;
+	}
+	.footerButtonHold{
+		width: 225px;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.footer ul{
+		margin-top: 10px;
 	}
 
 	.cvSegmentContentul{
