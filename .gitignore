@@ -1,5 +1,6 @@
 Gemfile.lock
 Gemfile~
+build/blog/2014/01/07/cold-mornings/woodblock.jpg
 build/projects/collisiondetect/raw/
 build/projects/dynamictimeline/raw/
 build/projects/linedraw/raw/
@@ -15,4 +16,5 @@ source/projects/photoport/raw/
 source/projects/bioresearch/raw/
 source/projects/singlepageport/raw/
 source/projects/datatimeline/raw/
+source/blog/2014-01-07-cold-mornings/woodblock.jpg
 web-portfolio.sublime-workspace
