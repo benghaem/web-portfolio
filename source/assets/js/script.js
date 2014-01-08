@@ -23,7 +23,7 @@ naviContainCacheVal = $('.naviContain');
 naviToggleCacheVal = $('.naviToggle');
 
 	//force footer to bottom
-	mainContainCacheVal.css("min-height", ($(window).height()-$('.footer').height()-95/*footer height + header height + main contain margin*/));
+	mainContainCacheVal.css("min-height", ($(window).height()-$('.footer').height()-85/*footer height + header height + main contain margin*/));
 
 	//place static items
 	naviContainCacheVal.css("left", Math.round(($(window).width()-naviContainCacheVal.outerWidth())/2));

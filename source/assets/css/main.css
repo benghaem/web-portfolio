@@ -989,9 +989,9 @@ pre{
 
 /*Footer*/
 .footer{
-	height: 140px;
+	height: 130px;
 	background: #4d4d4d;
-	padding-top: 30px;
+	padding-top: 20px;
 	text-align: center;
 	overflow: hidden;
 	clear: both;
@@ -1030,19 +1030,31 @@ pre{
 	color: #fff;
 }
 
+.footer span{
+	color: #fff;
+	font-size: .8em;
+	margin-top: 15px;
+}
+
+.footer span a{
+	color: #fff;
+	text-decoration: underline;
+}
+
 .footerButtonHold{
 /*	width: 765px;*/
-	width: 510px;
-	height: 75px;
-	margin: 0px auto 20px auto;
+	width: 420px;
+	height: 60px;
+	margin: 0px auto 10px auto;
 	position: relative;
+	font-size: .9em;
 }
 
 .footerButton{
-	width: 225px;
-	height: 75px;
+	width: 180px;
+	height: 60px;
 	margin: 0 15px 0 15px;
-	line-height: 75px;
+	line-height: 60px;
 	color: #fff;
 	background: #636363;
 	display: block;
@@ -1675,7 +1687,7 @@ pre{
 		display: none;
 	}*/
 	.footerButtonHold{
-		width: 510px;
+		width: 420px;
 	}
 }
 
@@ -1762,7 +1774,7 @@ pre{
 		position: relative;
 	}
 	.footerButtonHold{
-		width: 225px;
+		width: 180px;
 		height: auto;
 		overflow: hidden;
 	}
