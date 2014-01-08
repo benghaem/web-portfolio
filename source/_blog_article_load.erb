@@ -19,9 +19,9 @@
 		<h3><time><%= article.date.strftime('%b %e, %Y') %></time></h3>
 		<div class="blogPreview">
 			<p>
-			<%= article.summary %>
-			</p>
-			<a href="<%= article.url %>">...Continue Reading</a>
+				<%= article.summary %>
+			<span class="continue">...</span></p>
+			<a href="<%= article.url %>">Continue Reading</a>
 		</div>
 		<div class="blogArticleTags">
 			<h3>

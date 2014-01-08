@@ -57,6 +57,15 @@ h3{
 	margin: 0 0 0 0;
 	letter-spacing: .02em;
 }
+
+h4{
+	font-size: .8em;
+	color: #4d4d4d;
+	font-weight: 100;
+	margin: 0 0 0 0;
+	text-align: center;
+}
+
 form{
 	width: 400px;
 	height: 300px;
@@ -678,13 +687,28 @@ pre{
 	margin-top: 5px;
 	font-size: 1.1em;
 	line-height: 1.3em;
+	border-bottom: 1px solid black;
+	margin-bottom: 17px;
+}
+
+.blogArticleText a{
+	display: inline;
+	background: none;
+	color: #4D4D4D;
+	text-decoration: underline;
+	padding: 0 0 0 0;
+}
+
+.blogArticleText a:hover{
+	background: none;
+	color: #aaa;
 }
 
 .blogArticleText img{
-	width: 90%;
+	width: 80%;
 	height: auto;
-	outline: solid #aaa 5px;
-	margin: 0 5% 0 5%;
+	outline: solid #aaa 2px;
+	margin: 0 10% -10px 10%;
 	padding: 0 0 0 0;
 }
 
@@ -701,6 +725,10 @@ pre{
 	outline: solid #aaa 5px;
 	margin: 0 5% 0 5%;
 	padding: 0 0 0 0;
+}
+
+.blogPreview span.continue{
+	margin-left: -.25em;
 }
 
 .blogArticleTags{
