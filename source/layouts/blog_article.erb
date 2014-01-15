@@ -2,12 +2,12 @@
 	<div class="mainContain">
 		<%= partial "blog_sidebar" %>
 		<div class="blogMain">
-			<div class="blogArticle">
+			<div class="blogArticle" itemscope itemtype="http://schema.org/Article">
 				<article>
 					<div class="blogArticleTitle">
-					<h2><%= current_article.title %></h2><time><%= current_article.date.strftime('%b %e, %Y') %></time>
+					<h2 itemprop="name"><%= current_article.title %></h2><time <meta itemprop="datePublished"><%= current_article.date.strftime('%b %e, %Y') %></time>
 					</div>
-					<div class="blogArticleText">
+					<div class="blogArticleText" itemprop="articleBody">
 						<%= yield %>
 					</div>
 					<% if current_article.tags %>
@@ -22,8 +22,7 @@
 				        </h3>
 				    <% end %>
 		  		</article>
-			</div>
-			<div class="blogComments">
+		  		<span itemprop="author" itemscope itemtype="http://schema.org/Person"> <meta itemprop="name" content="Benjamin Ghaemmaghami"></span>
 			</div>
 		</div>
 	</div>

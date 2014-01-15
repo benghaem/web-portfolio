@@ -114,6 +114,18 @@ pre{
 	padding: none;
 }
 
+audio{
+	width: 100%;
+	overflow: visible;
+	height: 35px;
+}
+
+blockquote{
+	border-left: 10px solid #ddd;
+	margin: 0 0 0 0;
+	padding-left: 25px;
+}
+
 .error404{
 	width: 92%;
 	text-align: center;
@@ -685,9 +697,9 @@ pre{
 
 .blogArticleText{
 	margin-top: 5px;
-	font-size: 1.1em;
-	line-height: 1.3em;
-	border-bottom: 1px solid black;
+	font-size: 1em;
+	line-height: 1.5em;
+	border-bottom: 2px dashed #727272;
 	margin-bottom: 17px;
 }
 
@@ -740,7 +752,7 @@ pre{
 	position: relative;
 	display: block;
 	/*border-bottom:dashed rgba(0,0,0,.5) 2px;*/
-	border-top:dashed rgba(0,0,0,.5) 2px;
+	border-top:dashed #727272 2px;
 }
 
 
@@ -796,6 +808,7 @@ pre{
 .blogComments{
 	margin-top: 40px;
 	clear: both;
+	width: 100%;
 }
 
 /*Project Page*/
@@ -1066,6 +1079,11 @@ pre{
 
 .footerButton:hover{
 	background: #9c9c9c;
+}
+
+.footerButton:active{
+	margin-top: +3px;
+	margin-bottom: -3px;
 }
 
 .formHold{
@@ -1445,6 +1463,18 @@ pre{
 }
 .topSmallMargin{
 	margin-top: 12px;
+}
+
+a.hoverUnderline{
+	display: inline;
+	background: none;
+	padding: 0;
+	margin: 0;
+}
+
+a.hoverUnderline:hover{
+	text-decoration: underline;
+	color: #4D4D4D;
 }
 
 /*These classes create a cool scrolling effect as resized*/

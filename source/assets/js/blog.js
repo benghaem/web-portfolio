@@ -34,7 +34,7 @@ $( document ).ready(function() {
   	});
 
   	$(window).scroll(function() {
-	if (getBottomDist(window) <= 209 /*Footer total height inc. margin*/) {
+	if (getBottomDist(window) <= 180 /*Footer total height inc. margin*/) {
 		$('.blogSidebar').addClass('blogSidebarAbsolute');
 	}
 	else {

@@ -120,6 +120,7 @@ page "/projects/*", :layout => "projects_preview"
 
 page "/projects/*/raw/*", :layout => false
 page "/projects/*/raw/*/*", :layout => false
+page"/testbed/*/*", :layout =>false
 
 activate :directory_indexes
 
