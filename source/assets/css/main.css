@@ -58,7 +58,21 @@ h3{
 	letter-spacing: .02em;
 }
 
+.blogArticleText h3{
+	font-size: 1.3em;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #aaa;
+}
+
 h4{
+	font-size: 1.2em;
+	color: #4d4d4d;
+	font-weight: 100;
+	margin: 0 0 0 0;
+	letter-spacing: .02em;
+}
+
+h5{
 	font-size: .8em;
 	color: #4d4d4d;
 	font-weight: 100;
@@ -109,9 +123,10 @@ article{
 }
 
 pre{
-	word-wrap: break-all;
+	word-wrap: break-word;
 	font-size: .9em;
-	padding: none;
+	border: 2px solid #4d4d4d;
+	background: #F5F5F5;
 }
 
 audio{
@@ -706,14 +721,14 @@ blockquote{
 .blogArticleText a{
 	display: inline;
 	background: none;
-	color: #4D4D4D;
+	color: #3189D6;
 	text-decoration: underline;
 	padding: 0 0 0 0;
 }
 
 .blogArticleText a:hover{
 	background: none;
-	color: #aaa;
+	color: #83C1F7;
 }
 
 .blogArticleText img{
@@ -806,18 +821,20 @@ blockquote{
 	float: left;
 }
 .blogComments{
-	margin-top: 40px;
+	margin: 40px 10px 0 10px;
 	clear: both;
 	width: 100%;
+	max-width: 600px;
 }
 
 /*Project Page*/
 .projectText{
 	width: 780px;
-	padding-right: 20px;
+	margin-right: 20px;
 	font-size: 1.1em;
 	line-height: 1.3em;
 	float: left;
+	overflow: visible;
 }
 
 .projectText a{
@@ -1181,8 +1198,8 @@ blockquote{
 }
 
 .cssWindowOutside:hover{
-	height: 350px;
-	margin-top: 0px;
+	height: 345px;
+	margin-top: 5px;
 	transition-duration:300ms;
 }
 
