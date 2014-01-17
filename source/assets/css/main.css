@@ -821,10 +821,11 @@ blockquote{
 	float: left;
 }
 .blogComments{
-	margin: 40px 10px 0 10px;
+	margin: 40px auto 0 auto;
 	clear: both;
 	width: 100%;
-	max-width: 600px;
+	max-width: 580px;
+	position: relative;
 }
 
 /*Project Page*/

@@ -5,6 +5,7 @@ tags: Musings, Music
 colorClass: CCmutedGreen
 headerImg: True
 imgWrapLoc: 75
+comments: true
 ---
 
 Today was really cold. No, let's rephrase that. Today was way too cold. So after stepping out of the house, waiting for my Jeep to warm up, and really wishing that I had remembered gloves, I was able to drive away to the lovely sounds of HAIM. If you have not heard the HAIM album _Days Are Gone (2013)_ you should go give it a listen. 
