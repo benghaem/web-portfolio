@@ -10,7 +10,7 @@ The idea to create a collision detection example in HTML5's &lt;canvas&gt; eleme
 
 The main logic that powers the collisions is as follows:
 
-<pre>
+<pre class="line-numbers">
 <code class="language-javascript">function chkInside(xpos1, ypos1, xpos2, ypos2, w2, h2){
 		if(((xpos1 >= xpos2) &amp;&amp; (xpos1 &lt;= xpos2+w2)) &amp;&amp; ((ypos1 >= ypos2) &amp;&amp; (ypos1 &lt;= ypos2+h2))){
 			return true;
