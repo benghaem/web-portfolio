@@ -129,6 +129,7 @@ activate :directory_indexes
 I18n.enforce_available_locales = false
 
 
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -141,7 +142,9 @@ configure :build do
   activate :i18n
 
   # Enable cache buster
-  activate :asset_hash
+  activate :asset_hash, :ignore => %r{^blog/img/.*}
+
+
 
   # Use relative URLs
   #activate :relative_assets
