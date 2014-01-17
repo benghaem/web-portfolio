@@ -9,7 +9,7 @@
 			<div class="blogArchivePanel">
 				<%listYears.each do |year|%>
 					<div class="blogArchiveToggle" data-year="<%=year%>"></div>
-						<span><a href="<%=blog_year_path(year)%>"><%=year%>:</a></span>
+						<span><a href="<%=blog_year_path(year.to_i)%>"><%=year%>:</a></span>
 				<%end%>
 			</div>
 			<%listYears.each do |year|%>
@@ -17,7 +17,7 @@
 					<ul>
 						<%listMonths(year).each do |month|%>
 							<li>
-								<h3><a href="<%= blog_month_path(year,month[0])%>"><%=month[0]%></h3></a>
+								<h3><a href="<%= blog_month_path(year.to_i,month[0].to_i)%>"><%=month[0]%></h3></a>
 							</li>
 						<%end%>
 				 	</ul>
