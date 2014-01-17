@@ -1,7 +1,7 @@
 ---
 title: a grand adventure
 date: 2013-08-12 23:42 UTC
-tags: Musings
+tags: Musings, Development
 colorClass: CCmutedGreen
 headerImg: True
 imgWrapLoc: 33

@@ -13,9 +13,9 @@ _Days Are Gone_ is an interesting mix of alternative rock and what I might call 
 
 "Let Me Go" is one of the songs on the album that really stands out. I love the way that the song builds from humming and slowly layers on vocals and percussion, and then finally breaks into a strong beat. It also incorporates my favorite percussive instrument, the wood block, because really, the wood block rocks. 
 
-![Wood Block! (Wikimedia Commons)](woodblock.jpg)
+![Wood Block! (Wikimedia Commons)](2014-01-07-cold-mornings/woodblock.jpg)
 
-#### Wood Block! (Wikimedia Commons)
+##### Wood Block! (Wikimedia Commons)
 
 In conclusion, you should buy HAIM's _Days Are Gone_ or at least give it a listen.
 [Amazon](http://www.amazon.com/Days-Are-Gone-HAIM/dp/B00ECL7ZJ2/ref=sr_1_1?ie=UTF8&qid=1389143352&sr=8-1&keywords=haim+days+are+gone) | [iTunes](https://itunes.apple.com/us/album/days-are-gone/id681237313)
