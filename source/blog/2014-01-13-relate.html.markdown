@@ -5,6 +5,7 @@ tags: Musings, Life
 colorClass: CCmutedGreen
 headerImg: True
 imgWrapLoc: 25
+comments: true
 ---
 
 Relationships are a whole lot of fun. Whether they are romantic or just a long term friendship, the connections with people around us can define our lives. So how does one build a long-lasting relationship? Ignoring my limited number of revolutions around the Sun, I would like to share some of the things that I think are the most important in any relationshipREADMORE. 
