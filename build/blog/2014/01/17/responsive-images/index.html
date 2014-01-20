@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+	<!-- Benjami Ghaemmaghami V1.0 -->
+	<!-- GitHub: https://github.com/benghaem/web-portfolio -->
+	<head>	
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+	<!-- Use title if it's in the page YAML frontmatter -->
+	<title> content based responsive images - Ben Ghaem</title>
+	<!-- Load CDN JQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- Load Favicon -->
+	<link rel="icon" type="image/png" href="http://www.benghaem.com/assets/img/favicon.png">
+	<!-- Load Google Webfonts -->
+	<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+	<!-- Load local scripts/styles -->
+	<link href="/assets/css/normalize-6197e73d.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/css/main-6ed0fec6.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/css/prism-1a7c93c9.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="/assets/js/prism-bedd6bd4.js" type="text/javascript"></script>
+<script src="/assets/js/script-571d9120.js" type="text/javascript"></script>
+	<!-- Piwik -->
+	<script type="text/javascript">
+	  var _paq = _paq || [];
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.benghaem.com/";
+	    _paq.push(['setTrackerUrl', u+'piwik.php']);
+	    _paq.push(['setSiteId', 1]);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+	    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+
+	</script>
+	<noscript><p><img src="http://analytics.benghaem.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+	<!-- End Piwik Code -->
+  	</head>
+  	<script>
+		WebFont.load({
+		    google: {
+		    	families: ['Oxygen']
+	    		}
+		});
+	</script>
+	<body class="blog blog_2014 blog_2014_01 blog_2014_01_17 blog_2014_01_17_responsive-images blog_2014_01_17_responsive-images_index">
+		<div class="modalBlackout"><span>close</span></div>
+		<div class="modalHelper"></div>
+		<div class="effectContain">
+			<div class="naviToggle CCmutedGreen">
+				<div class="naviMiddle">
+					<a href="http://www.benghaem.com">ben ghaem</a>
+					<ul>
+						<li data-color="1"><a href="/" alt="Home">home</a></li> |
+						<li data-color="3"><a href="/projects/" alt="Projects">projects</a></li> |
+<!-- 						<li data-color="5"><a href="/testbed/">test bed</a></li > | -->
+						<li data-color="4"><a href="/blog/" alt="Blog">blog</a></li>
+					</ul>
+				</div>
+			</div>
+					<div class="mainContain">
+		<div class="blogSidebarReserve">
+<div class="blogSidebar">
+	<a href="/blog/" class="hoverUnderline"><h2>ben ghaem:</h2></a>
+	<p>I like to write about things ranging from personal experiences to the newest tech</p>
+	<div class="blogArchive">
+		<h2 class="bottomSmallMargin">archive:</h2>
+		<noscript>The calendar area is compacted via javascript, apolliges for a possibly long page</noscript>
+		<div class="blogArchiveSlider">
+			<div class="blogArchivePanel">
+				
+					<div class="blogArchiveToggle" data-year="2014"></div>
+						<span><a href="/blog/2014/">2014:</a></span>
+				
+					<div class="blogArchiveToggle" data-year="2013"></div>
+						<span><a href="/blog/2013/">2013:</a></span>
+				
+			</div>
+			
+				<div class="blogArchivePanel 2014CalHidden blogArchivePanelHidden">
+					<ul>
+						
+							<li>
+								<h3><a href="/blog/2014/01/">01</h3></a>
+							</li>
+						
+				 	</ul>
+				 	<div class="blogArchiveReturn">Back</div>
+				</div>
+			
+				<div class="blogArchivePanel 2013CalHidden blogArchivePanelHidden">
+					<ul>
+						
+							<li>
+								<h3><a href="/blog/2013/08/">08</h3></a>
+							</li>
+						
+				 	</ul>
+				 	<div class="blogArchiveReturn">Back</div>
+				</div>
+			
+		</div>
+	</div>
+	<div class="blogTagList">
+		<h2 class="topSmallMargin">tags:</h2>
+		<ul>
+			
+				<li>
+					<a href="/blog/tags/musings/">Musings (3)</a>
+					</li>
+			
+				<li>
+					<a href="/blog/tags/development/">Development (2)</a>
+					</li>
+			
+				<li>
+					<a href="/blog/tags/life/">Life (1)</a>
+					</li>
+			
+				<li>
+					<a href="/blog/tags/music/">Music (1)</a>
+					</li>
+			
+		</ul>
+	</div>
+</div>
+<div class="blogSidebarTracker"></div>
+</div>
+<script src="/assets/js/blog-2d531770.js" type="text/javascript"></script>
+		<div class="blogMain">
+			<div class="blogArticle" itemscope itemtype="http://schema.org/Article">
+				<article>
+					<div class="blogArticleTitle">
+					<h2 itemprop="name">content based responsive images</h2><time <meta itemprop="datePublished">Jan 17, 2014</time>
+					</div>
+					<div class="blogArticleText" itemprop="articleBody">
+						<p>Responsive images are a hard problem to completely solve. Some options retain the entire image while reducing size while others create new images for each resolution. I propose that a solution based on content is necessary so that the general structure of the page can be kept the same for both desktop and mobile viewers.</p>
+
+<p>Below I showcase a few of the options available for responsive images as well as example code snippets. </p>
+
+<h3 id="option-1-proportional-css-resize">Option 1: Proportional CSS Resize</h3>
+
+<p>Resize based on the image proportion as the page gets smaller with a CSS property such as:</p>
+
+<pre class="line-numbers">
+<code class="language-css">.dumbResize{
+	width: 100%;
+}</code>
+</pre>
+
+<p>However, this property fails to preserve the height of the image and can leave mobile viewers with extremely small images, two behaviors that should be avoided if possible.</p>
+
+<h3 id="option-2-css-media-queries">Option 2: CSS Media Queries</h3>
+
+<p>Different images for each page width using CSS media queries.<br />
+For example:</p>
+
+<pre class="line-numbers">
+<code class="language-css">/*Image for normal display*/
+.resizeImage{
+	background: url(awesomeImage.jpg) no-repeat center;
+}
+
+/*Image for tablet display*/
+@media (max-width : 768px){
+.resizeImage{
+	background: url(awesomeImage_1080.jpg) no-repeat center;
+}</code>
+</pre>
+
+<p>This CSS changes the image based on screen width. This solution works well, but requires significantly more setup time to create new images and write media queries. It is also limited to one image per class and could run into problems on dynamically generated pages.</p>
+
+<h3 id="option-3-content-based-horizontal-resize-css-only">Option 3: Content Based Horizontal Resize (CSS Only)</h3>
+
+<p>This solution resizes an image toward a percentage-based center as the width of the viewport decreases. This solution is specifically suited for variable width pages such as blogs that need to be viewed across devices. My algorithm solves the problem of images that overflow from their viewport as width decreases, consequently causing the image to lose its primary focus of interest. The algorithm corrects the image position so that the viewport centers the desired point of interest.  </p>
+
+<p>View the <a href="http://benghaem.com/testbed/responsive-image-demo/">Live Demo</a> or look at the images on <a href="http://benghaem.com/blog/">benghaem/blog/</a></p>
+
+<p>The base code is as follows:  </p>
+
+<h4 id="css">CSS</h4>
+<pre class="line-numbers">
+<code class="language-css">.exampleImageWrap{
+	margin-left: calc(('imageWidth[px]' - 100%) *-('location%'));
+}
+
+.container{
+    width: 100%;
+    overflow: hidden;
+    max-width: imageWidth[px];
+}</code>
+</pre>
+
+<h4 id="html">HTML</h4>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class="container"&gt;
+	&lt;img class="exampleImageWrap"&gt;&lt;img&gt;
+&lt;/div&gt;</code>
+</pre>
+
+<p></p>
+
+<h4 id="the-image-wrap">The Image Wrap:</h4>
+
+<p>The image wrap requires a single property, but the magic comes from the CSS calculation.</p>
+
+<pre class="line-numbers">
+<code class="language-css">margin-left: calc((320px - 100%) *-(.25));</code>
+</pre>
+
+<p>imageWidth[px] is replaced with the image width ex: "320px" and location% is replaced with a value that corresponds to the target location on the image. Half way across the image would be .5, a fourth from the left would be .25, and so on.  </p>
+
+<p>So why does this work? When the browser calculates the operation it will use the container width for the 100% value. Because the container is also 100% this will then scale the calculation based on the available width for the container. This is important because we want the container to resize, but we always want the image to stay at a fixed width. The image width - the container width = the current amount of the image that will be overflowing from the container. This value is then multiplied by the negative percentage given resulting in a final negative "margin-left" value. Margin-left then moves the image away from the center of the container to align it with the new calculated center.  </p>
+
+<p>Another way to think about this is as a limit. As x (100%) approaches 0 (zero container width) margin-left approaches the image width * the location percentage. This value will then be used to move the image outside of the viewport by that amount. </p>
+
+<p>For example, take the code above. When 100% reaches 0 the calculated value will be -80px or 1/4th of the image width that will be moved to the left of the image. Leaving that 25% location at the center of the (now zero) viewport.</p>
+
+<p>Again please view the <a href="http://benghaem.com/testbed/responsive-image-demo/">Live Demo</a> if this was confusing.</p>
+
+<h4 id="the-container">The Container:</h4>
+
+<p>The container is simple and the properties are pretty self explanatory.  </p>
+
+<ul>
+  <li>Width is 100% (or any other percentage) so that it will scale with the page.  </li>
+  <li>Overflow is hidden so that the image is not shown outside of the container when it shrinks.  </li>
+  <li>Max-width (optional) insures that the image width is the maximum that the container will expand to.</li>
+</ul>
+
+<h4 id="drawbacks">Drawbacks:</h4>
+<ol>
+  <li>
+    <p>Requires a fixed image width for each class used. This should not be a problem as assets should be created specifically for this use, but it is something to keep in mind.</p>
+  </li>
+  <li>
+    <p>Each scaling location requires its own class; I recommend creating around five or so for common locations ex: 25%, 33%, 50%, 66%, and 75%.</p>
+  </li>
+  <li>
+    <p>Because this property relies on css calc() it is not supported in all browsers. Currently <a href="http://caniuse.com/calc">caniuse.com</a> reports 72% global compatibility with IE 8 or lower unsupported. If compatibility is an issue for your users remember that the property degrades gracefully to simply no image repositioning, or check out the javascript version below.</p>
+  </li>
+</ol>
+
+<h3 id="option-4-content-based-horizontal-resize-js--css">Option 4: Content Based Horizontal Resize (JS + CSS)</h3>
+
+<p>This is the same solution as above, but using jQuery to control the margin on resize. This solution does not require a fixed image size and uses an html-data attribute to control sliding location. Use this solution if you want greater compatibility or would like to define location with html-data attributes.</p>
+
+<h4 id="css-1">CSS</h4>
+<pre class="line-numbers">
+<code class="language-css">.container{
+    width: 100%;
+    overflow: hidden;
+    max-width: imageWidth[px];
+}</code>
+</pre>
+
+<h4 id="html-1">HTML</h4>
+
+<pre class="line-numbers">
+<code class="language-markup">&lt;div class="container" data-location="25"&gt;
+	&lt;img&gt;&lt;/img&gt;
+&lt;/div&gt;</code>
+</pre>
+
+<h4 id="javascript-requires-jquery">Javascript (Requires jQuery)</h4>
+
+<pre class="line-numbers">
+<code class="language-javascript">$(window).resize(function(){
+	$('.container').each(function(){
+        var imageCache = $(this).children('img') /*Select first img element*/
+		var location = $(this).data("location")/100 /*Convert to decimal*/
+		var imageWidth = imageCache.width()
+		var containerWidth = $(this).width() 
+		var marginCorrect = (imageWidth-containerWidth)*-location
+		imageCache.css("margin-left", marginCorrect+"px")
+	})
+})</code>
+</pre>
+
+<h4 id="javascript-concise">Javascript Concise</h4>
+
+<pre class="line-numbers">
+<code class="language-javascript">$(window).resize(function(){
+	$('.container').each(function(){
+        var imageCache = $(this).children('img') /*Select img element*/
+		imageCache.css("margin-left", ((imageCache.width())-($(this).width()))*-($(this).data("location")/100)+"px")
+	})
+})</code>
+</pre>
+
+<h4 id="drawbacks-1">Drawbacks:</h4>
+
+<ol>
+  <li>
+    <p>Updating on window resize can be CPU intensive  </p>
+  </li>
+  <li>
+    <p>Likely slightly less efficient than the CSS solution because of jQuery's overhead</p>
+  </li>
+</ol>
+
+<h3 id="final-thoughts">Final Thoughts</h3>
+
+<p>Responsive images are a great way to enhance a mobile or desktop site. The main goal of a responsive image should be to display the same content across devices and the 3rd and 4th options are superior in this regard. Focusing on content takes marginally more time during development, but ensures that the user has a positive experience. Using dynamic resizing saves time, as a content center can be quickly identified by the developer, and the browser/scripting can be relied upon to center the image. Also, this same method could be extended to center images properly in two dimensions instead of just one.</p>
+
+<p>Any questions can be directed to the comments section below.</p>
+
+					</div>
+					
+						<h3>
+							<div class="tagIconFull">
+								<div class="tagIconSubSquare"></div>
+								<div class="tagIconSubTriangle"></div>
+							</div>
+							
+								<a href="/blog/tags/development/">Development</a>
+				            
+				        </h3>
+				    
+		  		</article>
+		  		<span itemprop="author" itemscope itemtype="http://schema.org/Person"> <meta itemprop="name" content="Benjamin Ghaemmaghami"></span>
+			
+				<div class="blogComments">
+					<div id="disqus_thread"></div>
+			    	<script type="text/javascript">
+			        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			        var disqus_shortname = 'benghaemcom'; // required: replace example with your forum shortname
+
+			        /* * * DON'T EDIT BELOW THIS LINE * * */
+			        (function() {
+			            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			        })();
+			    	</script>
+				    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+			<div class="footer">
+				<div class="footerButtonHold">
+					<div class="footerButton contactOpen">contact</div>
+					<!-- <a href="/cv/"><div class="footerButton">curriculum vitae</div></a> -->
+					<a href="https://github.com/benghaem/web-portfolio" class="githubFooterButton"><div class="footerButton">github repo</div></a>
+				</div>
+				<ul>
+					<li data-color="1"><a href="/"> home</a></li> |
+					<li data-color="3"><a href="/projects/"> projects</a></li> |
+<!-- 					<li data-color="5"><a href="/testbed/"> test bed</a></li > | -->
+					<li data-color="4"><a href="/blog/"> blog</a></li>
+				</ul>
+				<span>benjamin ghaemmaghami | code licensed <a rel="code-license" href="https://www.gnu.org/licenses/gpl.html">GPL v3</a> | content licensed <a rel="content-license" href="http://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a></span>
+			</div>
+		</div>
+	</body>
+</html>
