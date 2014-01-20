@@ -1627,23 +1627,6 @@ a.hoverUnderline:hover{
 		position: relative;
 	}
 
-	.blogSidebar{
-		display: none;
-	}
-
-	.blogSidebarReserve{
-		display: none;
-	}
-
-	.blogMain{
-		width: 80%;
-		margin: 0 10% 0 10%;
-	}
-	.blogArticle{
-		width: 100%;
-		max-width: 600px;
-		padding:0 0 0 0;
-	}
 	.projectText{
 		width: 80%;
 		margin: 0 10% 0 10%;
@@ -1699,6 +1682,26 @@ a.hoverUnderline:hover{
 	}
 }
 
+@media (max-width: 930px){
+		.blogSidebar{
+		display: none;
+	}
+
+	.blogSidebarReserve{
+		display: none;
+	}
+
+	.blogMain{
+		width: 80%;
+		margin: 0 10% 0 10%;
+	}
+	.blogArticle{
+		width: 100%;
+		max-width: 600px;
+		padding:0 0 0 0;
+	}
+}
+
 @media (max-width: 850px){
 	.projectSubhead{
 		text-align: center;
@@ -1717,7 +1720,7 @@ a.hoverUnderline:hover{
 		position: relative;
 		float: none;
 		clear: both;
-	}	
+	}
 }
 
 @media (max-width: 768px){
