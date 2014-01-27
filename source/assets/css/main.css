@@ -828,6 +828,19 @@ blockquote{
 	position: relative;
 }
 
+.blogComments a{
+	color: #4D4D4D;
+	background: none;
+	display: inline;
+	font-size: 12px;
+	text-align: center;
+}
+
+.blogComments a:hover{
+	background: none;
+	color: #000;
+}
+
 /*Project Page*/
 .projectText{
 	width: 780px;

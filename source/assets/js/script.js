@@ -66,7 +66,7 @@ naviToggleCacheVal = $('.naviToggle');
 
   	//close modal when escape key is pressed
   	$(document).keydown(function(event) {
-  		if (event.which === 27){
+  		if (event.which === 27 && pageStatus.modalActive === 1){
   			closeModal();
   		}
   		if (event.which === 37 && pageStatus.albumActive === true){
