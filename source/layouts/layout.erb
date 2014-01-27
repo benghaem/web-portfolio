@@ -10,7 +10,7 @@
 	<!-- Use title if it's in the page YAML frontmatter -->
 	<title> <%=current_page.data.title || yield_content(:title) || "Tag: " + tagname%> - Ben Ghaem</title>
 			<!-- Load Favicon -->
-	<link rel="icon" type="image/png" href="http://www.benghaem.com/assets/img/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="<%= image_path("/assets/img/favicon.png") %>">
   	</head>
 	<body class="<%= page_classes %>">
 		<div class="modalBlackout"><span>close</span></div>
